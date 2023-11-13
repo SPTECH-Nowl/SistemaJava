@@ -36,9 +36,9 @@ public class HistConsmRecurso {
     public HistConsmRecurso() {
     }
 
-    public void mostrarHistorico(Integer maquinaId,String nomeAula) {
+    public void mostrarHistorico(Integer maquinaId, String nomeAula) {
 
-        insertHistorico(maquinaId,nomeAula);
+        insertHistorico(maquinaId, nomeAula);
     }
 
     public void fecharSistema() {
@@ -46,7 +46,7 @@ public class HistConsmRecurso {
         System.exit(0);
     }
 
-    public void insertHistorico(Integer maquinaId,String nomeAula) {
+    public void insertHistorico(Integer maquinaId, String nomeAula) {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -71,13 +71,14 @@ public class HistConsmRecurso {
 
                 mostrarDadosEmTabela(consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas, hardwares.get(1), hardwares.get(2));
 
+                GravarEmArquivo(dataHora, consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas);
 
                 verificarLimiteEEnviarNotificacao("CPU", consumoCpu, componentes.get(0).getMax(), hardwares.get(0));
                 verificarLimiteEEnviarNotificacao("RAM", consumoRam, componentes.get(1).getMax(), hardwares.get(1));
                 verificarLimiteEEnviarNotificacao("Disco", consumoDisco, componentes.get(2).getMax(), hardwares.get(2));
                 verificarLimiteEEnviarNotificacao("Quantidade janelas", qtdJanelasAbertas, 15, hardwares.get(0));
 
-                MonitorarSoftware(maquinaId,nomeAula);
+                MonitorarSoftware(maquinaId, nomeAula);
 
 
                 // Chamar a função para criar e gravar no arquivo
@@ -85,6 +86,46 @@ public class HistConsmRecurso {
             }
         }, 1000, 1000);
     }
+
+    public String obterSistemaOperacionalDaMaquina(JdbcTemplate con, Maquina maquina) {
+        String sql = "SELECT m.SO AS sistemaOperacional FROM maquina m WHERE m.idMaquina = ?";
+        return con.queryForObject(sql, String.class, maquina.getIdMaquina()); // essa função chama o sistema operacionak
+    }
+
+    private void GravarEmArquivo(LocalDateTime dataHora, int consumoCpu, long consumoRam, long consumoDisco, Integer qtdJanelasAbertas) {
+        String nomeDoArquivo = "C:\\Users\\Aluno\\IdeaProjects\\SistemaJava\\arquivo";
+
+        // Mensagem para solicitar suporte
+        String mensagemSuporte = "Suporte foi solicitado para arrumar a máquina com ID"; // deixa essa parte dinamica, para arrumar as maquinas que esta em alerta
+
+        try {
+            File arquivo = new File(nomeDoArquivo);
+
+            if (!arquivo.exists()) {
+                arquivo.createNewFile(); // arrumar a parte do log
+            }
+
+            BufferedWriter escritor = new BufferedWriter(new FileWriter(arquivo, true));
+
+            // Construir a string de dados
+            String dados = "Data/Hora: " + dataHora + "\n" +
+                    "Consumo CPU: " + consumoCpu + "%\n" +
+                    "Consumo RAM: " + consumoRam + " bytes\n" +
+                    "Consumo Disco: " + consumoDisco + " GB\n" +
+                    "Janelas Abertas: " + qtdJanelasAbertas + " janelas abertas\n" +
+                    "Mensagem para Suporte: " + mensagemSuporte + "\n\n";
+
+            // Escrever os dados no arquivo
+            escritor.write(dados);
+
+            escritor.close();
+
+            System.out.println("Dados gravados em " + nomeDoArquivo + ", Gerando LOG de consumos dos dados");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+     }
 
     private void insertDadosNoBanco(Integer componente, Number consumo, Integer numeroMaquina, Integer tipohardware) {
 
@@ -111,12 +152,12 @@ public class HistConsmRecurso {
         System.out.println("+---------------------+--------------+-----------------+-------------+----------------------+");
         System.out.print("| " + dataHora + " | " + consumoCpu + "%        | ");
         if (Ram > 0) {
-            System.out.print(String.format( " %.2f%%  |  ",Ram));
+            System.out.print(String.format(" %.2f%%  |  ", Ram));
         } else {
             System.out.println("N/A             | ");
         }
         if (Disco > 0) {
-            System.out.print(String.format( " %.2f%%  |  ",Disco));
+            System.out.print(String.format(" %.2f%%  |  ", Disco));
         } else {
             System.out.println("N/A             | ");
         }
@@ -159,7 +200,7 @@ public class HistConsmRecurso {
     }
 
 
-    public void MonitorarSoftware(Integer idMaquina,String nomeAula) {
+    public void MonitorarSoftware(Integer idMaquina, String nomeAula) {
 
         timer02.schedule(new TimerTask() {
             @Override
@@ -174,13 +215,11 @@ public class HistConsmRecurso {
                     }
 
 
-
                     List<Maquina.Processo> processos = con.query(" select idProcesso,nomeProcesso,nomeAplicativo from processo join permissaoProcesso on idprocesso = fkProcesso where fkPermissao=(select  idPermissao from permissao where nome = ?);",
-                            new BeanPropertyRowMapper<>(Maquina.Processo.class),nomeAula);
+                            new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
 
                     List<Maquina> maquinas = con.query("SELECT * FROM maquina where idMaquina = ?",
-                            new BeanPropertyRowMapper<>(Maquina.class),idMaquina);
-
+                            new BeanPropertyRowMapper<>(Maquina.class), idMaquina);
 
 
                     processBuilder.redirectErrorStream(true);
@@ -193,11 +232,11 @@ public class HistConsmRecurso {
                     while (Busca.readLine() != null) {
                         linhaBusca = Busca.readLine();
                         for (Maquina.Processo processo : processos) {
-                            if (linhaBusca.contains(processo.getNomeAplicativo()) && linhaBusca!= null) {
+                            if (linhaBusca.contains(processo.getNomeAplicativo()) && linhaBusca != null) {
                                 dataHora = LocalDateTime.now();
 
                                 con.update("INSERT INTO strike (dataHora, validade, motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, null, 30, idMaquina, 1);
-                                botSlack.mensagemSoftware(processo.getNomeAplicativo(),maquinas.get(0) );
+                                botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
                             }
                         }
                     }
@@ -206,42 +245,5 @@ public class HistConsmRecurso {
                 }
             }
         }, 1000, 5000);
-    }
-
-    private void GravarEmArquivo(String dataHora, int consumoCpu, long consumoRam, long consumoDisco, int qtdJanelasAbertas, String sistemaOperacional, int idMaquina) {
-        String nomeDoArquivo = "C:\\Users\\Aluno\\IdeaProjects\\SistemaJava\\arquivo";
-
-        // Mensagem para solicitar suporte
-        String mensagemSuporte = "Suporte foi solicitado para arrumar a máquina com ID " + idMaquina + ".";
-
-        try {
-            File arquivo = new File(nomeDoArquivo);
-
-            if (!arquivo.exists()) {
-                arquivo.createNewFile();
-            }
-
-            BufferedWriter escritor = new BufferedWriter(new FileWriter(arquivo, true));
-
-            // Construir a string de dados
-            String dados = "Data/Hora: " + dataHora + "\n" +
-                    "ID da Máquina: " + idMaquina + "\n" +
-                    "Sistema Operacional: " + sistemaOperacional + "\n" +
-                    "Consumo CPU: " + consumoCpu + "%\n" +
-                    "Consumo RAM: " + consumoRam + " bytes\n" +
-                    "Consumo Disco: " + consumoDisco + " GB\n" +
-                    "Janelas Abertas: " + qtdJanelasAbertas + " janelas abertas\n" +
-                    "Mensagem para Suporte: " + mensagemSuporte + "\n\n";
-
-            // Escrever os dados no arquivo
-            escritor.write(dados);
-
-            escritor.close();
-
-            System.out.println("Dados gravados em " + nomeDoArquivo + ", Gerando LOG de consumos dos dados");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

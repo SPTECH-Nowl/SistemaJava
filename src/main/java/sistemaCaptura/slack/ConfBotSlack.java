@@ -11,7 +11,7 @@ import org.json.JSONObject;
 public class ConfBotSlack {
 
     private static final HttpClient client = HttpClient.newHttpClient();
-    private static final String URL="https://api.slack.com/apps/A061UHK7P71/incoming-webhooks?code=6077098544578.6182612998018.eb044f26b664e87c95ba9a802eef6a5a4c7061cbbfea6228adcfb8419c875584&state=";
+    private static final String URL="https://hooks.slack.com/services/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";
 //A URL NÂO VAI FUNCIONAR DEPOIS DE COLOCAR NO GITHUB TROQUE ELA ANTES DE UTILIZAR O CHATBOT
 //    JÀ ESTOU MONTANDO UM JEITO DE ARRUMAR ISSO DA URL
     public static void sendMessage(JSONObject content) throws IOException, InterruptedException {

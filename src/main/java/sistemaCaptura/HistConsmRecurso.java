@@ -87,10 +87,6 @@ public class HistConsmRecurso {
         }, 1000, 1000);
     }
 
-    public String obterSistemaOperacionalDaMaquina(JdbcTemplate con, Maquina maquina) {
-        String sql = "SELECT m.SO AS sistemaOperacional FROM maquina m WHERE m.idMaquina = ?";
-        return con.queryForObject(sql, String.class, maquina.getIdMaquina()); // essa função chama o sistema operacionak
-    }
 
     private void GravarEmArquivo(LocalDateTime dataHora, int consumoCpu, long consumoRam, long consumoDisco, Integer qtdJanelasAbertas) {
         String nomeDoArquivo = "C:\\Users\\Aluno\\IdeaProjects\\SistemaJava\\arquivo";

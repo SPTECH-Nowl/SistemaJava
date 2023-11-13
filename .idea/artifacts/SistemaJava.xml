@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="SistemaJava">
+    <output-path>$PROJECT_DIR$/out/artifacts/SistemaJava</output-path>
+    <root id="archive" name="SistemaJava.jar" />
+  </artifact>
+</component>

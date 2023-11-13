@@ -3,7 +3,7 @@ package sistemaCaptura;
 public class Maquina {
     private Integer idMaquina;
     private String nome;
-    private String SO;
+    private String os;
     private Integer emUso;
     private Integer fkInstituicao;
     private String sistemaOperacional;
@@ -15,7 +15,7 @@ public class Maquina {
     public Maquina(Integer idMaquina, String nome, String os, Integer emUso, Integer fkInstituicao, String sistemaOperacional, String detalhes) {
         this.idMaquina = idMaquina;
         this.nome = nome;
-        this.SO = SO;
+        this.os = os;
         this.emUso = emUso;
         this.fkInstituicao = fkInstituicao;
         this.sistemaOperacional = sistemaOperacional;
@@ -56,12 +56,12 @@ public class Maquina {
         this.nome = nome;
     }
 
-    public String getSO() {
-        return SO;
+    public String getOs() {
+        return os;
     }
 
-    public void setSO(String SO) {
-        this.SO = SO;
+    public void setOs(String os) {
+        this.os = os;
     }
 
     public Integer getEmUso() {
@@ -85,7 +85,7 @@ public class Maquina {
         return "Maquina{" +
                 "idMaquina='" + idMaquina + '\'' +
                 ", nome='" + nome + '\'' +
-                ", SO='" + SO + '\'' +
+                ", os='" + os + '\'' +
                 ", emUso=" + emUso +
                 ", fkInstituicao=" + fkInstituicao +
                 ", sistemaOperacional='" + sistemaOperacional + '\'' +

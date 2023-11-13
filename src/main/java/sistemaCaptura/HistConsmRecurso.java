@@ -71,7 +71,6 @@ public class HistConsmRecurso {
 
                 mostrarDadosEmTabela(consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas, hardwares.get(1), hardwares.get(2));
 
-                GravarEmArquivo(dataHora, consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas);
 
                 verificarLimiteEEnviarNotificacao("CPU", consumoCpu, componentes.get(0).getMax(), hardwares.get(0));
                 verificarLimiteEEnviarNotificacao("RAM", consumoRam, componentes.get(1).getMax(), hardwares.get(1));
@@ -86,42 +85,6 @@ public class HistConsmRecurso {
             }
         }, 1000, 1000);
     }
-
-
-    private void GravarEmArquivo(LocalDateTime dataHora, int consumoCpu, long consumoRam, long consumoDisco, Integer qtdJanelasAbertas) {
-        String nomeDoArquivo = "C:\\Users\\Aluno\\IdeaProjects\\SistemaJava\\arquivo";
-
-        // Mensagem para solicitar suporte
-        String mensagemSuporte = "Suporte foi solicitado para arrumar a máquina com ID"; // deixa essa parte dinamica, para arrumar as maquinas que esta em alerta
-
-        try {
-            File arquivo = new File(nomeDoArquivo);
-
-            if (!arquivo.exists()) {
-                arquivo.createNewFile(); // arrumar a parte do log
-            }
-
-            BufferedWriter escritor = new BufferedWriter(new FileWriter(arquivo, true));
-
-            // Construir a string de dados
-            String dados = "Data/Hora: " + dataHora + "\n" +
-                    "Consumo CPU: " + consumoCpu + "%\n" +
-                    "Consumo RAM: " + consumoRam + " bytes\n" +
-                    "Consumo Disco: " + consumoDisco + " GB\n" +
-                    "Janelas Abertas: " + qtdJanelasAbertas + " janelas abertas\n" +
-                    "Mensagem para Suporte: " + mensagemSuporte + "\n\n";
-
-            // Escrever os dados no arquivo
-            escritor.write(dados);
-
-            escritor.close();
-
-            System.out.println("Dados gravados em " + nomeDoArquivo + ", Gerando LOG de consumos dos dados");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-     }
 
     private void insertDadosNoBanco(Integer componente, Number consumo, Integer numeroMaquina, Integer tipohardware) {
 
@@ -228,11 +191,15 @@ public class HistConsmRecurso {
                     while (Busca.readLine() != null) {
                         linhaBusca = Busca.readLine();
                         for (Maquina.Processo processo : processos) {
-                            if (linhaBusca.contains(processo.getNomeAplicativo()) && linhaBusca != null) {
-                                dataHora = LocalDateTime.now();
+                            if (linhaBusca != null) {
+                                if (linhaBusca.contains(processo.getNomeAplicativo())) {
+                                    dataHora = LocalDateTime.now();
 
-                                con.update("INSERT INTO strike (dataHora, validade, motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, null, 30, idMaquina, 1);
-                                botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
+                                    con.update("INSERT INTO strike (dataHora, validade,motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
+                                    botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
+                                }
+                            }else{
+                                System.out.println("Sem dados");
                             }
                         }
                     }
@@ -241,5 +208,42 @@ public class HistConsmRecurso {
                 }
             }
         }, 1000, 5000);
+    }
+
+    private void GravarEmArquivo(String dataHora, int consumoCpu, long consumoRam, long consumoDisco, int qtdJanelasAbertas, String sistemaOperacional, int idMaquina) {
+        String nomeDoArquivo = "C:\\Users\\Aluno\\IdeaProjects\\SistemaJava\\arquivo";
+
+        // Mensagem para solicitar suporte
+        String mensagemSuporte = "Suporte foi solicitado para arrumar a máquina com ID " + idMaquina + ".";
+
+        try {
+            File arquivo = new File(nomeDoArquivo);
+
+            if (!arquivo.exists()) {
+                arquivo.createNewFile();
+            }
+
+            BufferedWriter escritor = new BufferedWriter(new FileWriter(arquivo, true));
+
+            // Construir a string de dados
+            String dados = "Data/Hora: " + dataHora + "\n" +
+                    "ID da Máquina: " + idMaquina + "\n" +
+                    "Sistema Operacional: " + sistemaOperacional + "\n" +
+                    "Consumo CPU: " + consumoCpu + "%\n" +
+                    "Consumo RAM: " + consumoRam + " bytes\n" +
+                    "Consumo Disco: " + consumoDisco + " GB\n" +
+                    "Janelas Abertas: " + qtdJanelasAbertas + " janelas abertas\n" +
+                    "Mensagem para Suporte: " + mensagemSuporte + "\n\n";
+
+            // Escrever os dados no arquivo
+            escritor.write(dados);
+
+            escritor.close();
+
+            System.out.println("Dados gravados em " + nomeDoArquivo + ", Gerando LOG de consumos dos dados");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

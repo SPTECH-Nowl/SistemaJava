@@ -159,12 +159,65 @@ public class HistConsmRecurso {
     }
 
 
+//    public void MonitorarSoftware(Integer idMaquina, String nomeAula) {
+//
+//        timer02.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//
+//                try {
+//                    ProcessBuilder processBuilder;
+//                    if (System.getProperty("os.name").toLowerCase().contains("win")) {
+//                        processBuilder = new ProcessBuilder("tasklist");
+//                    } else {
+//                        processBuilder = new ProcessBuilder("ps", "aux");
+//                    }
+//
+//
+//                    List<Maquina.Processo> processos = con.query(" select idProcesso,nomeProcesso,nomeAplicativo from processo join permissaoProcesso on idprocesso = fkProcesso where fkPermissao=(select  idPermissao from permissao where nome = ?);",
+//                            new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
+//
+//                    List<Maquina> maquinas = con.query("SELECT * FROM maquina where idMaquina = ?",
+//                            new BeanPropertyRowMapper<>(Maquina.class), idMaquina);
+//
+//
+//                    processBuilder.redirectErrorStream(true);
+//                    Process process = processBuilder.start();
+//
+//                    BufferedReader Busca = new BufferedReader(new InputStreamReader(process.getInputStream()));
+//                    String linhaBusca;
+//
+//
+//                    while (Busca.readLine() != null) {
+//                        linhaBusca = Busca.readLine();
+//                        for (Maquina.Processo processo : processos) {
+//                            if (linhaBusca != null) {
+//                                if (linhaBusca.contains(processo.getNomeAplicativo())) {
+//                                    dataHora = LocalDateTime.now();
+//
+//                                    con.update("INSERT INTO strike (dataHora, validade,motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
+//                                    botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
+//                                }
+//                            }else{
+//
+//                            }
+//                        }
+//                    }
+//                } catch (IOException | InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }, 1000, 5000);
+//    }
+
+
     public void MonitorarSoftware(Integer idMaquina, String nomeAula) {
+        Timer timer02 = new Timer();
+        final Boolean[] timeoutAtivo = {false};
 
         timer02.schedule(new TimerTask() {
             @Override
             public void run() {
-
                 try {
                     ProcessBuilder processBuilder;
                     if (System.getProperty("os.name").toLowerCase().contains("win")) {
@@ -173,13 +226,11 @@ public class HistConsmRecurso {
                         processBuilder = new ProcessBuilder("ps", "aux");
                     }
 
-
                     List<Maquina.Processo> processos = con.query(" select idProcesso,nomeProcesso,nomeAplicativo from processo join permissaoProcesso on idprocesso = fkProcesso where fkPermissao=(select  idPermissao from permissao where nome = ?);",
                             new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
 
                     List<Maquina> maquinas = con.query("SELECT * FROM maquina where idMaquina = ?",
                             new BeanPropertyRowMapper<>(Maquina.class), idMaquina);
-
 
                     processBuilder.redirectErrorStream(true);
                     Process process = processBuilder.start();
@@ -187,19 +238,26 @@ public class HistConsmRecurso {
                     BufferedReader Busca = new BufferedReader(new InputStreamReader(process.getInputStream()));
                     String linhaBusca;
 
-
                     while (Busca.readLine() != null) {
                         linhaBusca = Busca.readLine();
                         for (Maquina.Processo processo : processos) {
                             if (linhaBusca != null) {
                                 if (linhaBusca.contains(processo.getNomeAplicativo())) {
                                     dataHora = LocalDateTime.now();
-
                                     con.update("INSERT INTO strike (dataHora, validade,motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
-                                    botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
+
+                                    if (!timeoutAtivo[0]) {
+                                        timeoutAtivo[0] = true;
+                                        botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
+                                        Timer timer = new Timer();
+                                        timer.schedule(new TimerTask() {
+                                            @Override
+                                            public void run() {
+                                                timeoutAtivo[0] = false;
+                                            }
+                                        }, 5000); // 5000 milissegundos = 5 segundos
+                                    }
                                 }
-                            }else{
-                                System.out.println("Sem dados");
                             }
                         }
                     }

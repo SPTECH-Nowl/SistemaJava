@@ -179,7 +179,7 @@ public class AppHistorico {
                         for (Maquina maquina : maquinas) {
                             System.out.println("id: " + maquina.getIdMaquina());
                             System.out.println("nome: " + maquina.getNome());
-                            System.out.println("Sistema Operacional: " + maquina.getOs());
+                            System.out.println("Sistema Operacional: " + maquina.getSO());
                             if (maquina.getDetalhes() != null) {
                                 System.out.println("Detalhes: " + maquina.getDetalhes());
                             }

@@ -1,0 +1,242 @@
+Data/Hora: Wed Nov 15 20:44:52 BRT 2023
+Mensagem de log: Este é um exemplo de log.
+Data/Hora: Wed Nov 15 20:44:53 BRT 2023
+ID da Máquina: null
+Consumo CPU: 10%
+Consumo RAM: 6113607680 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:45:02 BRT 2023
+ID da Máquina: null
+Consumo CPU: 98%
+Consumo RAM: 6230740992 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:45:12 BRT 2023
+ID da Máquina: null
+Consumo CPU: 84%
+Consumo RAM: 6218436608 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:45:22 BRT 2023
+ID da Máquina: null
+Consumo CPU: 86%
+Consumo RAM: 6187970560 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:45:32 BRT 2023
+ID da Máquina: null
+Consumo CPU: 85%
+Consumo RAM: 6163206144 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:45:42 BRT 2023
+ID da Máquina: null
+Consumo CPU: 67%
+Consumo RAM: 6207315968 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:45:52 BRT 2023
+ID da Máquina: null
+Consumo CPU: 36%
+Consumo RAM: 6174486528 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:46:02 BRT 2023
+ID da Máquina: null
+Consumo CPU: 41%
+Consumo RAM: 6209163264 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:50:02 BRT 2023
+ID da Máquina: null
+Consumo CPU: 8%
+Consumo RAM: 6114795520 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:50:08 BRT 2023
+ID da Máquina: null
+Consumo CPU: 8%
+Consumo RAM: 6183104512 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:50:18 BRT 2023
+ID da Máquina: null
+Consumo CPU: 71%
+Consumo RAM: 6179696640 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:50:28 BRT 2023
+ID da Máquina: null
+Consumo CPU: 75%
+Consumo RAM: 6198517760 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:50:38 BRT 2023
+ID da Máquina: null
+Consumo CPU: 82%
+Consumo RAM: 6208303104 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:50:49 BRT 2023
+ID da Máquina: null
+Consumo CPU: 66%
+Consumo RAM: 6220038144 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:50:59 BRT 2023
+ID da Máquina: null
+Consumo CPU: 27%
+Consumo RAM: 6339096576 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:51:08 BRT 2023
+ID da Máquina: null
+Consumo CPU: 75%
+Consumo RAM: 6326358016 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:51:18 BRT 2023
+ID da Máquina: null
+Consumo CPU: 51%
+Consumo RAM: 6284697600 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:51:28 BRT 2023
+ID da Máquina: null
+Consumo CPU: 77%
+Consumo RAM: 6275072000 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:51:38 BRT 2023
+ID da Máquina: null
+Consumo CPU: 75%
+Consumo RAM: 6645387264 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:51:48 BRT 2023
+ID da Máquina: null
+Consumo CPU: 100%
+Consumo RAM: 7067303936 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:51:59 BRT 2023
+ID da Máquina: null
+Consumo CPU: 100%
+Consumo RAM: 7063891968 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:52:08 BRT 2023
+ID da Máquina: null
+Consumo CPU: 100%
+Consumo RAM: 6975307776 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:52:19 BRT 2023
+ID da Máquina: null
+Consumo CPU: 100%
+Consumo RAM: 6917304320 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:52:28 BRT 2023
+ID da Máquina: null
+Consumo CPU: 100%
+Consumo RAM: 7077355520 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:56:27 BRT 2023
+ID da Máquina: null
+Consumo CPU: 23%
+Consumo RAM: 6408953856 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:56:33 BRT 2023
+ID da Máquina: null
+Consumo CPU: 23%
+Consumo RAM: 6532505600 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:56:43 BRT 2023
+ID da Máquina: null
+Consumo CPU: 84%
+Consumo RAM: 6551072768 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:56:52 BRT 2023
+ID da Máquina: null
+Consumo CPU: 100%
+Consumo RAM: 6577049600 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:57:03 BRT 2023
+ID da Máquina: null
+Consumo CPU: 77%
+Consumo RAM: 6584938496 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.
+Data/Hora: Wed Nov 15 20:57:12 BRT 2023
+ID da Máquina: null
+Consumo CPU: 66%
+Consumo RAM: 6599299072 bytes
+Consumo Disco: 1256255239680 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar a máquina com ID null.
+
+Nova mensagem de log adicionada.

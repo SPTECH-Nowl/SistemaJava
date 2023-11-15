@@ -4,6 +4,7 @@ import com.github.britooo.looca.api.core.Looca;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import sistemaCaptura.conexao.Conexao;
+import sistemaCaptura.log.metodos.Logs;
 import sistemaCaptura.slack.BotSlack;
 
 import java.io.*;
@@ -32,13 +33,13 @@ public class HistConsmRecurso {
     Timer timer02 = new Timer();
 
     BotSlack botSlack = new BotSlack();
-
+Logs logs = new Logs();
     public HistConsmRecurso() {
     }
 
     public void mostrarHistorico(Integer maquinaId, String nomeAula) {
 
-        insertHistorico(maquinaId, nomeAula);
+        insertHistorico(maquinaId,nomeAula);
     }
 
     public void fecharSistema() {
@@ -46,7 +47,7 @@ public class HistConsmRecurso {
         System.exit(0);
     }
 
-    public void insertHistorico(Integer maquinaId, String nomeAula) {
+    public void insertHistorico(Integer maquinaId,String nomeAula) {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -72,18 +73,42 @@ public class HistConsmRecurso {
                 mostrarDadosEmTabela(consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas, hardwares.get(1), hardwares.get(2));
 
 
-                verificarLimiteEEnviarNotificacao("CPU", consumoCpu, componentes.get(0).getMax(), hardwares.get(0));
-                verificarLimiteEEnviarNotificacao("RAM", consumoRam, componentes.get(1).getMax(), hardwares.get(1));
-                verificarLimiteEEnviarNotificacao("Disco", consumoDisco, componentes.get(2).getMax(), hardwares.get(2));
-                verificarLimiteEEnviarNotificacao("Quantidade janelas", qtdJanelasAbertas, 15, hardwares.get(0));
+                try {
+                    verificarLimiteEEnviarNotificacao("CPU", consumoCpu, componentes.get(0).getMax(), hardwares.get(0));
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                try {
+                    verificarLimiteEEnviarNotificacao("RAM", consumoRam, componentes.get(1).getMax(), hardwares.get(1));
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                try {
+                    verificarLimiteEEnviarNotificacao("Disco", consumoDisco, componentes.get(2).getMax(), hardwares.get(2));
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                try {
+                    verificarLimiteEEnviarNotificacao("Quantidade janelas", qtdJanelasAbertas, 15, hardwares.get(0));
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
 
                 MonitorarSoftware(maquinaId, nomeAula);
 
 
                 // Chamar a função para criar e gravar no arquivo
-//                GravarEmArquivo(dataHoraFormatada, consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas, sistemaOperacional, idMaquina);
+                logs.gerarLog(fkMaquina, (long) consumoCpu, consumoRam, consumoDisco);
             }
-        }, 1000, 1000);
+        }, 1000, 10000);
     }
 
     private void insertDadosNoBanco(Integer componente, Number consumo, Integer numeroMaquina, Integer tipohardware) {
@@ -124,7 +149,8 @@ public class HistConsmRecurso {
         System.out.println("+---------------------+--------------+-----------------+-------------+----------------------+");
     }
 
-    private void verificarLimiteEEnviarNotificacao(String componente, long consumo, int limite, Hardware hardware) {
+    private void verificarLimiteEEnviarNotificacao(String componente, long consumo, int limite, Hardware hardware) throws IOException, InterruptedException {
+        final Boolean[] timeoutAtivo = {false};
         double porcentagem = 0.0;
         if (componente.equals("RAM")) {
             double bytes = consumo / 8.00;
@@ -148,67 +174,19 @@ public class HistConsmRecurso {
             }
 
             // Enviar notificação por Slack
-            try {
+            if (!timeoutAtivo[0]) {
+                timeoutAtivo[0] = true;
                 botSlack.mensagemHardware(componente);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                Timer timer = new Timer();
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        timeoutAtivo[0] = false;
+                    }
+                },1000, 5000); // 5000 milissegundos = 5 segundos
             }
         }
     }
-
-
-//    public void MonitorarSoftware(Integer idMaquina, String nomeAula) {
-//
-//        timer02.schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//
-//                try {
-//                    ProcessBuilder processBuilder;
-//                    if (System.getProperty("os.name").toLowerCase().contains("win")) {
-//                        processBuilder = new ProcessBuilder("tasklist");
-//                    } else {
-//                        processBuilder = new ProcessBuilder("ps", "aux");
-//                    }
-//
-//
-//                    List<Maquina.Processo> processos = con.query(" select idProcesso,nomeProcesso,nomeAplicativo from processo join permissaoProcesso on idprocesso = fkProcesso where fkPermissao=(select  idPermissao from permissao where nome = ?);",
-//                            new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
-//
-//                    List<Maquina> maquinas = con.query("SELECT * FROM maquina where idMaquina = ?",
-//                            new BeanPropertyRowMapper<>(Maquina.class), idMaquina);
-//
-//
-//                    processBuilder.redirectErrorStream(true);
-//                    Process process = processBuilder.start();
-//
-//                    BufferedReader Busca = new BufferedReader(new InputStreamReader(process.getInputStream()));
-//                    String linhaBusca;
-//
-//
-//                    while (Busca.readLine() != null) {
-//                        linhaBusca = Busca.readLine();
-//                        for (Maquina.Processo processo : processos) {
-//                            if (linhaBusca != null) {
-//                                if (linhaBusca.contains(processo.getNomeAplicativo())) {
-//                                    dataHora = LocalDateTime.now();
-//
-//                                    con.update("INSERT INTO strike (dataHora, validade,motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
-//                                    botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
-//                                }
-//                            }else{
-//
-//                            }
-//                        }
-//                    }
-//                } catch (IOException | InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }, 1000, 5000);
-//    }
 
 
     public void MonitorarSoftware(Integer idMaquina, String nomeAula) {
@@ -244,10 +222,12 @@ public class HistConsmRecurso {
                             if (linhaBusca != null) {
                                 if (linhaBusca.contains(processo.getNomeAplicativo())) {
                                     dataHora = LocalDateTime.now();
-                                    con.update("INSERT INTO strike (dataHora, validade,motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
+
 
                                     if (!timeoutAtivo[0]) {
                                         timeoutAtivo[0] = true;
+
+                                        con.update("INSERT INTO strike (dataHora, validade,motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
                                         botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
                                         Timer timer = new Timer();
                                         timer.schedule(new TimerTask() {
@@ -268,40 +248,6 @@ public class HistConsmRecurso {
         }, 1000, 5000);
     }
 
-    private void GravarEmArquivo(String dataHora, int consumoCpu, long consumoRam, long consumoDisco, int qtdJanelasAbertas, String sistemaOperacional, int idMaquina) {
-        String nomeDoArquivo = "C:\\Users\\Aluno\\IdeaProjects\\SistemaJava\\arquivo";
 
-        // Mensagem para solicitar suporte
-        String mensagemSuporte = "Suporte foi solicitado para arrumar a máquina com ID " + idMaquina + ".";
 
-        try {
-            File arquivo = new File(nomeDoArquivo);
-
-            if (!arquivo.exists()) {
-                arquivo.createNewFile();
-            }
-
-            BufferedWriter escritor = new BufferedWriter(new FileWriter(arquivo, true));
-
-            // Construir a string de dados
-            String dados = "Data/Hora: " + dataHora + "\n" +
-                    "ID da Máquina: " + idMaquina + "\n" +
-                    "Sistema Operacional: " + sistemaOperacional + "\n" +
-                    "Consumo CPU: " + consumoCpu + "%\n" +
-                    "Consumo RAM: " + consumoRam + " bytes\n" +
-                    "Consumo Disco: " + consumoDisco + " GB\n" +
-                    "Janelas Abertas: " + qtdJanelasAbertas + " janelas abertas\n" +
-                    "Mensagem para Suporte: " + mensagemSuporte + "\n\n";
-
-            // Escrever os dados no arquivo
-            escritor.write(dados);
-
-            escritor.close();
-
-            System.out.println("Dados gravados em " + nomeDoArquivo + ", Gerando LOG de consumos dos dados");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }

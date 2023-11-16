@@ -211,16 +211,19 @@ Maquina maquina = obterMaquina(maquinaId);
                         for (Maquina.Processo processo : obterProcessos(nomeAula)) {
                             if (linhaBusca.contains(processo.getNomeAplicativo())) {
                                strike[0] = true;
+                                System.out.println(processo.getNomeAplicativo());
                                nomeUltimoProcesso[0] = processo.getNomeAplicativo();
                             }
                         }
                     }
-                    if (strike[0] = true){
+                    if (strike[0] == true){
                         LocalDateTime dataHora = LocalDateTime.now();
                         cadastrarStrike(idMaquina, dataHora);
                         botSlack.mensagemSoftware(nomeUltimoProcesso[0], obterMaquina(idMaquina));
                         System.out.println("Strike");
                         timer.cancel(); // Cancela o timer após cadastrar um "strike"
+                    }else{
+                        System.out.println("Você esta limpo amigo");
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

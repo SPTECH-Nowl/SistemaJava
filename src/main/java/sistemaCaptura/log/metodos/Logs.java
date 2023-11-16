@@ -55,4 +55,10 @@ public class Logs {
             e.printStackTrace();
         }
     }
+
+    private static void adicionarMotivo(String caminhoCompleto,Maquina maquina){
+        String mensagemSuporte = "Suporte foi solicitado para arrumar  a maquina (" + maquina.getNome() + ").";
+
+    }
+
 }

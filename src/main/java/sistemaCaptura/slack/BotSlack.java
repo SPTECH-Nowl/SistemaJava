@@ -20,7 +20,7 @@ public class BotSlack {
 
     public void mensagemSoftware(String processo,Maquina maquina) throws IOException, InterruptedException {
 
-        String mensagemSlack = "A maquina do Nome: ("+maquina.getNome()+ ") estava utilizando: "+processo+ " que é marcado como um processo não permitido";
+        String mensagemSlack = "("+maquina.getNome()+ ") esta sendo utilizado de maneira indevida um dos processo que estava sendo utilizando: "+processo+ " que é marcado como um dos processo não permitido";
 
         JSONObject json = new JSONObject();
 

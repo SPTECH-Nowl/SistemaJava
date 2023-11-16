@@ -6,56 +6,53 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+
 public class Logs {
     private static final String CAMINHO_ARQUIVO = "src/main/java/sistemaCaptura/log/users/";
+    private static final int LIMITE_CPU = 60;  // Defina o limite máximo de CPU conforme necessário
+    private static final int LIMITE_RAM = 60;  // Defina o limite máximo de RAM conforme necessário
 
-    public static void gerarLog(Integer idMaquina,Long consumoCpu,Long consumoRam,Long consumoDisco) {
-        // Obter a data atual
-        Date dataAtual = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+    public static void gerarLog(Integer idMaquina, Long consumoCpu, Long consumoRam, Long consumoDisco) {
+        LocalDate dataAtual = LocalDate.now();
+        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyyMMdd", Locale.ENGLISH);
         String nomeArquivo = dateFormat.format(dataAtual) + "_log.txt";
         String caminhoCompleto = CAMINHO_ARQUIVO + nomeArquivo;
 
-        try {
-            if (Files.exists(Path.of(caminhoCompleto))) {
-                // Se o arquivo já existe, adiciona mensagens
-                adicionarMensagens(caminhoCompleto, dataAtual,idMaquina,consumoCpu,consumoRam,consumoDisco);
-            } else {
-                // Se o arquivo não existe, cria um novo e adiciona mensagens
-                criarNovoArquivo(caminhoCompleto, dataAtual);
-            }
+        if (Files.exists(Path.of(caminhoCompleto))) {
+            adicionarMensagens(caminhoCompleto, dataAtual, idMaquina, consumoCpu, consumoRam, consumoDisco);
+        } else {
+            criarNovoArquivo(caminhoCompleto, dataAtual);
+        }
+    }
+
+    private static void adicionarMensagens(String caminhoCompleto, LocalDate dataAtual, Integer idMaquina, Long consumoCpu, Long consumoRam, Long consumoDisco) {
+        try (BufferedWriter writer = Files.newBufferedWriter(Path.of(caminhoCompleto), StandardOpenOption.APPEND)) {
+
+            String mensagemSuporte = "Suporte foi solicitado para arrumar a máquina com ID " + idMaquina + ".";
+
+            // Adicionar mensagem relacionada ao consumo máximo de CPU e RAM
+            String mensagemConsumo = String.format("O consumo de CPU estourou o máximo sugerido (%d%%). O consumo de RAM atingiu o máximo sugerido (%d%%) de acordo com o nome da máquina.%n", LIMITE_CPU, LIMITE_RAM);
+
+            String dados = String.format("Data/Hora: %s%nID da Máquina: %d%nConsumo CPU: %d%%%nConsumo RAM: %d bytes%nConsumo Disco: %d GB%nMensagem para Suporte: %s%n%s%n",
+                    dataAtual, idMaquina, consumoCpu, consumoRam, consumoDisco, mensagemSuporte, mensagemConsumo);
+
+            writer.write(dados);
+            writer.write("Nova mensagem de log adicionada.\n");
+            System.out.println("Mensagem adicionada ao log em: " + caminhoCompleto);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private static void adicionarMensagens(String caminhoCompleto, Date dataAtual,Integer idMaquina,Long consumoCpu,Long consumoRam,Long consumoDisco) throws IOException {
-        try (BufferedWriter writer = Files.newBufferedWriter(Path.of(caminhoCompleto), StandardOpenOption.APPEND)) {
-
-            String mensagemSuporte = "Suporte foi solicitado para arrumar a máquina com ID " + idMaquina + ".";
-            String dados = "Data/Hora: " + dataAtual + "\n" +
-                    "ID da Máquina: " + idMaquina + "\n" +
-
-                    "Consumo CPU: " + consumoCpu + "%\n" +
-                    "Consumo RAM: " + consumoRam + " bytes\n" +
-                    "Consumo Disco: " + consumoDisco + " GB\n" +
-                    "Mensagem para Suporte: " + mensagemSuporte + "\n\n";
-
-            // Adicionar mensagens ao arquivo existente
-            writer.write(dados);
-            writer.write("Nova mensagem de log adicionada.\n");
-            System.out.println("Mensagem adicionada ao log em: " + caminhoCompleto);
-        }
-    }
-
-    private static void criarNovoArquivo(String caminhoCompleto, Date dataAtual) throws IOException {
+    private static void criarNovoArquivo(String caminhoCompleto, LocalDate dataAtual) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminhoCompleto))) {
-            // Criar um novo arquivo com mensagens
-            writer.write("Data/Hora: " + dataAtual.toString() + "\n");
-            writer.write("Mensagem de log: Este é um exemplo de log.\n");
+            writer.write(String.format("Data/Hora: %s%nMensagem de log: Este é um exemplo de log.%n", dataAtual));
             System.out.println("Novo log gerado com sucesso em: " + caminhoCompleto);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

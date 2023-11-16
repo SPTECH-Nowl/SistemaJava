@@ -33,13 +33,14 @@ public class HistConsmRecurso {
     Timer timer02 = new Timer();
 
     BotSlack botSlack = new BotSlack();
-Logs logs = new Logs();
+    Logs logs = new Logs();
+
     public HistConsmRecurso() {
     }
 
     public void mostrarHistorico(Integer maquinaId, String nomeAula) {
 
-        insertHistorico(maquinaId,nomeAula);
+        insertHistorico(maquinaId, nomeAula);
     }
 
     public void fecharSistema() {
@@ -47,7 +48,7 @@ Logs logs = new Logs();
         System.exit(0);
     }
 
-    public void insertHistorico(Integer maquinaId,String nomeAula) {
+    public void insertHistorico(Integer maquinaId, String nomeAula) {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -61,6 +62,7 @@ Logs logs = new Logs();
 
                 List<Componente> componentes = con.query("SELECT * FROM componente WHERE fkMaquina = ?",
                         new BeanPropertyRowMapper<>(Componente.class), maquinaId);
+                MonitorarSoftware(maquinaId, nomeAula);
 
                 insertDadosNoBanco(componentes.get(0).getIdComponente(), consumoCpu, maquinaId, componentes.get(0).getFkHardware());
                 insertDadosNoBanco(componentes.get(1).getIdComponente(), consumoRam, maquinaId, componentes.get(1).getFkHardware());
@@ -102,7 +104,6 @@ Logs logs = new Logs();
                     throw new RuntimeException(e);
                 }
 
-                MonitorarSoftware(maquinaId, nomeAula);
 
 
                 // Chamar a função para criar e gravar no arquivo
@@ -183,71 +184,66 @@ Logs logs = new Logs();
                     public void run() {
                         timeoutAtivo[0] = false;
                     }
-                },1000, 5000); // 5000 milissegundos = 5 segundos
+                }, 1000, 5000); // 5000 milissegundos = 5 segundos
             }
         }
     }
 
 
     public void MonitorarSoftware(Integer idMaquina, String nomeAula) {
-        Timer timer02 = new Timer();
-        final Boolean[] timeoutAtivo = {false};
-
-        timer02.schedule(new TimerTask() {
+        Timer timer = new Timer();
+        final Boolean[] strike = {false};
+        final String[] nomeUltimoProcesso = new String[1];
+        timer.schedule(new TimerTask() {
             @Override
             public void run() {
                 try {
-                    ProcessBuilder processBuilder;
-                    if (System.getProperty("os.name").toLowerCase().contains("win")) {
-                        processBuilder = new ProcessBuilder("tasklist");
-                    } else {
-                        processBuilder = new ProcessBuilder("ps", "aux");
-                    }
+                    String comando = (System.getProperty("os.name").toLowerCase().contains("win")) ? "tasklist" : "ps aux";
 
-                    List<Maquina.Processo> processos = con.query(" select idProcesso,nomeProcesso,nomeAplicativo from processo join permissaoProcesso on idprocesso = fkProcesso where fkPermissao=(select  idPermissao from permissao where nome = ?);",
-                            new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
-
-                    List<Maquina> maquinas = con.query("SELECT * FROM maquina where idMaquina = ?",
-                            new BeanPropertyRowMapper<>(Maquina.class), idMaquina);
-
+                    ProcessBuilder processBuilder = new ProcessBuilder(comando);
                     processBuilder.redirectErrorStream(true);
                     Process process = processBuilder.start();
 
-                    BufferedReader Busca = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                    BufferedReader busca = new BufferedReader(new InputStreamReader(process.getInputStream()));
                     String linhaBusca;
 
-                    while (Busca.readLine() != null) {
-                        linhaBusca = Busca.readLine();
-                        for (Maquina.Processo processo : processos) {
-                            if (linhaBusca != null) {
-                                if (linhaBusca.contains(processo.getNomeAplicativo())) {
-                                    dataHora = LocalDateTime.now();
-
-
-                                    if (!timeoutAtivo[0]) {
-                                        timeoutAtivo[0] = true;
-
-                                        con.update("INSERT INTO strike (dataHora, validade,motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
-                                        botSlack.mensagemSoftware(processo.getNomeAplicativo(), maquinas.get(0));
-                                        Timer timer = new Timer();
-                                        timer.schedule(new TimerTask() {
-                                            @Override
-                                            public void run() {
-                                                timeoutAtivo[0] = false;
-                                            }
-                                        }, 5000); // 5000 milissegundos = 5 segundos
-                                    }
-                                }
+                    while ((linhaBusca = busca.readLine()) != null) {
+                        for (Maquina.Processo processo : obterProcessos(nomeAula)) {
+                            if (linhaBusca.contains(processo.getNomeAplicativo())) {
+                               strike[0] = true;
+                               nomeUltimoProcesso[0] = processo.getNomeAplicativo();
                             }
                         }
                     }
-                } catch (IOException | InterruptedException e) {
+                    if (strike[0] = true){
+                        LocalDateTime dataHora = LocalDateTime.now();
+                        cadastrarStrike(idMaquina, dataHora);
+                        botSlack.mensagemSoftware(nomeUltimoProcesso[0], obterMaquina(idMaquina));
+                        System.out.println("Strike");
+                        timer.cancel(); // Cancela o timer após cadastrar um "strike"
+                    }
+                } catch (IOException e) {
                     e.printStackTrace();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
                 }
             }
-        }, 1000, 5000);
+        }, 5000, 15000); // Inicia após 5 segundos e repete a cada 15 segundos
     }
 
+    private List<Maquina.Processo> obterProcessos(String nomeAula) {
+        return con.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
+                new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
+    }
+
+    private Maquina obterMaquina(Integer idMaquina) {
+        return con.queryForObject("SELECT * FROM maquina WHERE idMaquina = ?",
+                new BeanPropertyRowMapper<>(Maquina.class), idMaquina);
+    }
+
+    private void cadastrarStrike(Integer idMaquina, LocalDateTime dataHora) {
+        con.update("INSERT INTO strike (dataHora, validade, motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
+    }
 
 
 }

@@ -104,10 +104,10 @@ public class HistConsmRecurso {
                     throw new RuntimeException(e);
                 }
 
-
+Maquina maquina = obterMaquina(maquinaId);
 
                 // Chamar a função para criar e gravar no arquivo
-                logs.gerarLog(fkMaquina, (long) consumoCpu, consumoRam, consumoDisco);
+                logs.gerarLog(maquina, (long) consumoCpu, consumoRam, consumoDisco);
             }
         }, 1000, 10000);
     }

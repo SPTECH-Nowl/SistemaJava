@@ -231,11 +231,11 @@ public class AppHistorico {
 
     private static void exibirMensagemDespedida() {
         System.out.println("+---------------------------------------------------------------+");
-        System.out.println("|                      \u001B[38;2;109;73;157mMAGISTER\u001B[0m                         |");
-        System.out.println("|   \u001B[38;2;109;73;157mObrigado por usar o nosso sistema\u001B[0m               |"); // Cor personalizada
-        System.out.println("|   \u001B[38;2;109;73;157mTenha um ótimo dia e uma vida incrível\u001B[0m      |"); // Cor personalizada
-        System.out.println("|                                                                   |");
-        System.out.println("|                        \u001B[38;2;109;73;157m#6D499D\u001B[0m                     |"); // Cor personalizada
+        System.out.println("|                            \u001B[38;2;109;73;157mMAGISTER\u001B[0m                           |");
+        System.out.println("|             \u001B[38;2;109;73;157mObrigado por usar o nosso sistema\u001B[0m                 |"); // Cor personalizada
+        System.out.println("|          \u001B[38;2;109;73;157mTenha um ótimo dia e uma vida incrível\u001B[0m               |"); // Cor personalizada
+        System.out.println("|                                                               |");
+        System.out.println("|                        \u001B[38;2;109;73;157m#6D499D\u001B[0m                                |"); // Cor personalizada
         System.out.println("+---------------------------------------------------------------+");
     }
 

@@ -24,25 +24,26 @@ public class AppHistorico {
 
         do {
             System.out.println("-".repeat(15));
-            System.out.println("Bem vindo ao sistema Nowl");
+            System.out.println("Bem-vindo ao sistema Nowl");
             System.out.println("Escolha uma das opções abaixo");
             System.out.println("1 - Fazer login");
             System.out.println("2 - Sair");
+            System.out.println("3 - Cadastrar máquina");
             System.out.println("-".repeat(15));
 
             escolha = in.nextInt();
 
             switch (escolha) {
                 case 1:
-//                    cadastrarUsuario(con);
-//                    break;
                     fazerLogin(con, histConsmRecurso, in);
                     break;
                 case 2:
                     exibirMensagemDespedida();
                     histConsmRecurso.fecharSistema();
                     break;
-
+                case 3:
+                    cadastrarMaquina(con);
+                    break;
                 default:
                     System.out.println("Opção inválida");
             }
@@ -117,21 +118,15 @@ public class AppHistorico {
             if (usuarios.get(0).getFkTipoUsuario().equals(1)) {
                 usuario = new AdmNowl(usuarios.get(0));
                 System.out.println("Bem vindo ADM Nowl" + usuario.getNome());
-
-
             } else if (usuarios.get(0).getFkTipoUsuario().equals(2)) {
                 usuario = new Adiministrador(usuarios.get(0));
                 System.out.println("Bem vindo ADM " + usuario.getNome());
-
-
             } else if (usuarios.get(0).getFkTipoUsuario().equals(3)) {
                 usuario = new Professor(usuarios.get(0));
                 System.out.println("Bem vindo Professor " + usuario.getNome());
-
             } else {
                 usuario = new Aluno(usuarios.get(0));
                 System.out.println("Bem vindo Usuario" + usuario.getNome());
-
             }
             Integer opcaoUsuario;
 
@@ -140,25 +135,23 @@ public class AppHistorico {
 
                 if (usuario instanceof AdmNowl) {
                     System.out.println("Opções de ADM Nowl");
-                    System.out.println("N1 - listar máquinas disponiveis de alguma empresa");
-                    System.out.println("N2 - listar usuarios de alguma empresa");
-                    System.out.println("N3 - Cadastrar usuario ");
+                    System.out.println("N1 - listar máquinas disponíveis de alguma empresa");
+                    System.out.println("N2 - listar usuários de alguma empresa");
+                    System.out.println("N3 - Cadastrar usuário ");
                 }
 
                 if (usuario instanceof Adiministrador) {
-                    System.out.println("Opções de Adiministrador");
-                    System.out.println("A1 - listar máquinas disponiveis da sua instituição");
+                    System.out.println("Opções de Administrador");
+                    System.out.println("A1 - listar máquinas disponíveis da sua instituição");
                     System.out.println("A2 - listar máquinas em uso da sua instituição");
-                    System.out.println("A3 - listar usuarios da sua intituição");
-                    System.out.println("A4 - Cadastrar usuario ");
-
+                    System.out.println("A3 - listar usuários da sua instituição");
+                    System.out.println("A4 - Cadastrar usuário ");
                 }
                 if (usuario instanceof Professor) {
                     System.out.println("Opções de Professor");
-                    System.out.println("P1 - listar máquinas disponiveis da sua instituição");
+                    System.out.println("P1 - listar máquinas disponíveis da sua instituição");
                     System.out.println("P2 - listar máquinas em uso da sua instituição");
-                    System.out.println("AP3 - listar usuarios da sua intituição");
-
+                    System.out.println("AP3 - listar usuários da sua instituição");
                 }
 
                 System.out.println("----------|| Opções do sistema ||----------");
@@ -188,18 +181,19 @@ public class AppHistorico {
                         System.out.println("-".repeat(15));
                         System.out.println("Digite o número da máquina");
                         Integer numMaquina = in.nextInt();
+//                        cadastrarHardwareEComponente(con, numMaquina);
                         ativarMaquina(con, numMaquina, histConsmRecurso);
                         numeroMaquina = numMaquina;
-                        System.out.println("Digite o codigo da aula");
+                        System.out.println("Digite o código da aula");
                         String codigoAula = leitor.nextLine();
-                        histConsmRecurso.mostrarHistorico(numeroMaquina,codigoAula);
+                        histConsmRecurso.mostrarHistorico(numeroMaquina, codigoAula);
                         break;
 
                     case 2:
                         desativarMaquina(con, numeroMaquina);
                         exibirMensagemDespedida();
-                        histConsmRecurso.fecharSistema();
-                        return; // Isso encerrará o programa
+                        histConsmRecurso.fecharSistema();// Isso encerrará o programa
+                        return;
                     default:
                         System.out.println("Opção inválida");
                 }
@@ -209,17 +203,13 @@ public class AppHistorico {
         }
     }
 
-
     private static void ativarMaquina(JdbcTemplate con, Integer maquinaId, HistConsmRecurso histConsmRecurso) {
         Maquina maquina = con.queryForObject("SELECT * FROM maquina WHERE idMaquina = ? AND emUso = 0",
                 new BeanPropertyRowMapper<>(Maquina.class), maquinaId);
 
         if (maquina != null) {
-
             con.update("UPDATE maquina SET emUso = 1 WHERE idMaquina = ?", maquinaId);
             System.out.println("Máquina ativada com sucesso: " + maquina.getNome());
-
-            // Agora, você tem as informações corretas em maquina.getSistemaOperacional() e maquina.getRamTotal()
         } else {
             System.out.println("Máquina não disponível ou inválida.");
         }
@@ -231,12 +221,98 @@ public class AppHistorico {
 
     private static void exibirMensagemDespedida() {
         System.out.println("+---------------------------------------------------------------+");
-        System.out.println("|                            \u001B[38;2;109;73;157mMAGISTER\u001B[0m                           |");
-        System.out.println("|             \u001B[38;2;109;73;157mObrigado por usar o nosso sistema\u001B[0m                 |"); // Cor personalizada
-        System.out.println("|          \u001B[38;2;109;73;157mTenha um ótimo dia e uma vida incrível\u001B[0m               |"); // Cor personalizada
+        System.out.println("|                            MAGISTER                           |");
+        System.out.println("|             Obrigado por usar o nosso sistema                 |");
+        System.out.println("|          Tenha um ótimo dia e uma vida incrível               |");
         System.out.println("|                                                               |");
-        System.out.println("|                        \u001B[38;2;109;73;157m#6D499D\u001B[0m                                |"); // Cor personalizada
+        System.out.println("|                        #6D499D                                |");
         System.out.println("+---------------------------------------------------------------+");
     }
 
+    private static void cadastrarMaquina(JdbcTemplate con) {
+        Scanner leitor = new Scanner(System.in);
+
+        System.out.println("Digite o nome da máquina:");
+        String nomeMaquina = leitor.nextLine();
+
+        System.out.println("Digite o sistema operacional da máquina:");
+        String sistemaOperacional = leitor.nextLine();
+
+        System.out.println("A máquina está em uso? (Digite 1 para sim, 0 para não):");
+        int emUso = leitor.nextInt();
+
+        System.out.println("Digite o ID da instituição (fkInstituicao):");
+        int fkInstituicao = leitor.nextInt();
+
+        // Cadastrar a máquina no banco de dados
+        con.update("INSERT INTO maquina (nome, SO, emUso, fkInstituicao) VALUES (?, ?, ?, ?)",
+                nomeMaquina, sistemaOperacional, emUso, fkInstituicao);
+
+        // Recuperar o ID da máquina recém-cadastrada
+        Integer idMaquina = con.queryForObject("SELECT MAX(idMaquina) FROM maquina", Integer.class);
+
+        // Cadastrar hardware e componente para a máquina
+        cadastrarHardwareEComponente(con, idMaquina);
+        cadastrarHardwareEComponente(con, idMaquina);
+        cadastrarHardwareEComponente(con, idMaquina);
+
+        System.out.println("Máquina cadastrada com sucesso!");
+    }
+
+    private static Integer cadastrarTipoHardware(JdbcTemplate con) {
+        Scanner leitor = new Scanner(System.in);
+
+        System.out.println("Digite o nome do tipo de hardware (ex: CPU, GPU, Memória):");
+        String tipoHardware = leitor.nextLine();
+
+        // Cadastrar o tipo de hardware no banco de dados
+        con.update("INSERT INTO tipoHardware (tipo) VALUES (?)", tipoHardware);
+
+        // Recuperar o ID do tipo de hardware recém-cadastrado
+        return con.queryForObject("SELECT MAX(idTipoHardware) FROM tipoHardware", Integer.class);
+    }
+
+    private static void cadastrarHardwareEComponente(JdbcTemplate con, Integer idMaquina) {
+        Scanner leitor = new Scanner(System.in);
+
+        // Cadastrar hardware
+        System.out.println("Digite o fabricante do hardware:");
+        String fabricante = leitor.nextLine();
+
+        System.out.println("Digite o modelo do hardware:");
+        String modelo = leitor.nextLine();
+
+        System.out.println("Digite a capacidade do hardware:");
+        double capacidade = leitor.nextDouble();
+
+
+        System.out.println("Digite a especificidade do hardware:");
+        String especificidade = leitor.nextLine();
+
+        // Cadastrar o tipo de hardware
+        System.out.println("Digite o tipo de hardware (ex: CPU, GPU, Memória):");
+        String tipoHardware = leitor.nextLine();
+
+        // Cadastrar o tipo de hardware no banco de dados
+        con.update("INSERT INTO tipoHardware (tipo) VALUES (?)", tipoHardware);
+
+        // Recuperar o ID do tipo de hardware recém-cadastrado
+        Integer fkTipoHardware = con.queryForObject("SELECT MAX(idTipoHardware) FROM tipoHardware", Integer.class);
+
+        // Cadastrar o hardware no banco de dados, incluindo fkTipoHardware
+        con.update("INSERT INTO hardware (fabricante, modelo, capacidade, especificidade, fkTipoHardware) VALUES (?, ?, ?, ?, ?)", fabricante, modelo, capacidade, especificidade, fkTipoHardware);
+
+        // Recuperar o ID do hardware recém-cadastrado
+        Integer idHardware = con.queryForObject("SELECT MAX(idHardware) FROM hardware", Integer.class);
+
+        // Cadastrar componente
+        System.out.println("Digite a porcentagem máxima para o componente (deixe em branco para usar o valor padrão):");
+        String inputMax = leitor.nextLine();
+        Integer max = (inputMax.isEmpty()) ? null : Integer.parseInt(inputMax);
+
+        // Cadastrar o componente no banco de dados, incluindo fkTipoHardware
+        con.update("INSERT INTO componente (max, fkMaquina, fkHardware) VALUES (?, ?, ?)", max, idMaquina, idHardware);
+
+        System.out.println("Hardware e componente cadastrados com sucesso!");
+    }
 }

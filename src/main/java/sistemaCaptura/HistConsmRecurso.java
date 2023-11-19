@@ -211,7 +211,6 @@ Maquina maquina = obterMaquina(maquinaId);
                         for (Maquina.Processo processo : obterProcessos(nomeAula)) {
                             if (linhaBusca.contains(processo.getNomeAplicativo())) {
                                strike[0] = true;
-                                System.out.println(processo.getNomeAplicativo());
                                nomeUltimoProcesso[0] = processo.getNomeAplicativo();
                             }
                         }

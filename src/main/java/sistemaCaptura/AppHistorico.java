@@ -1,6 +1,7 @@
 package sistemaCaptura;
 
 import sistemaCaptura.conexao.Conexao;
+import sistemaCaptura.log.metodos.Logs;
 import sistemaCaptura.user.Usuario;
 import sistemaCaptura.user.Adiministrador;
 import sistemaCaptura.user.Professor;
@@ -9,10 +10,16 @@ import sistemaCaptura.user.Aluno;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class AppHistorico {
+
+    static Logs logs = new Logs();
+    static LocalDate dataAtual;
 
     public static void main(String[] args) {
         Conexao conexao = new Conexao();
@@ -21,7 +28,8 @@ public class AppHistorico {
 
         Scanner in = new Scanner(System.in);
         Integer escolha;
-
+        String motivoComeco= ":--SUCCESS: O Sistema iniciou normalmente";
+        logs.adicionarMotivo(motivoComeco);
         do {
             System.out.println("-".repeat(15));
             System.out.println("Bem-vindo ao sistema Nowl");
@@ -115,6 +123,9 @@ public class AppHistorico {
                 new BeanPropertyRowMapper<>(Usuario.class), email, senha);
 
         if (usuarios.size() > 0) {
+            String motivo = ":--SUCCESS: O Sistema localizou " + usuarios.size() + " registro(s)  relacionado ao email ('" + email + "') e a senha ('" + senha + "')!";
+            logs.adicionarMotivo(motivo);
+
             if (usuarios.get(0).getFkTipoUsuario().equals(1)) {
                 usuario = new AdmNowl(usuarios.get(0));
                 System.out.println("Bem vindo ADM Nowl" + usuario.getNome());
@@ -162,33 +173,40 @@ public class AppHistorico {
                 opcaoUsuario = in.nextInt();
 
                 switch (opcaoUsuario) {
+
                     case 1:
-                        List<Maquina> maquinas = con.query("SELECT * FROM maquina WHERE emUso = 0",
-                                new BeanPropertyRowMapper<>(Maquina.class));
+                        List<Maquina> maquinas = con.query("SELECT * FROM maquina WHERE emUso = 0 AND fkInstituicao = ?",
+                                new BeanPropertyRowMapper<>(Maquina.class),usuario.getFkInstituicao());
+                        if (maquinas.size() > 0) {
+                            String motivoMaquina= ":--SUCCESS: O Sistema localizou "+maquinas.size()+" maquina(s) registrada(s)  relacionadas a intituição!";
+                            logs.adicionarMotivo(motivoMaquina);
 
-                        System.out.println("-".repeat(15));
-                        System.out.println("Escolha uma máquina disponível");
+                            System.out.println("-".repeat(15));
+                            System.out.println("Escolha uma máquina disponível");
 
-                        for (Maquina maquina : maquinas) {
-                            System.out.println("id: " + maquina.getIdMaquina());
-                            System.out.println("nome: " + maquina.getNome());
-                            System.out.println("Sistema Operacional: " + maquina.getSO());
-                            if (maquina.getDetalhes() != null) {
-                                System.out.println("Detalhes: " + maquina.getDetalhes());
+                            for (Maquina maquina : maquinas) {
+                                System.out.println("id: " + maquina.getIdMaquina());
+                                System.out.println("nome: " + maquina.getNome());
+                                System.out.println("Sistema Operacional: " + maquina.getSO());
+                                if (maquina.getDetalhes() != null) {
+                                    System.out.println("Detalhes: " + maquina.getDetalhes());
+                                }
                             }
-                        }
 
-                        System.out.println("-".repeat(15));
-                        System.out.println("Digite o número da máquina");
-                        Integer numMaquina = in.nextInt();
+                            System.out.println("-".repeat(15));
+                            System.out.println("Digite o número da máquina");
+                            Integer numMaquina = in.nextInt();
 //                        cadastrarHardwareEComponente(con, numMaquina);
-                        ativarMaquina(con, numMaquina, histConsmRecurso);
-                        numeroMaquina = numMaquina;
-                        System.out.println("Digite o código da aula");
-                        String codigoAula = leitor.nextLine();
-                        histConsmRecurso.mostrarHistorico(numeroMaquina, codigoAula);
-                        break;
-
+                            ativarMaquina(con, numMaquina, histConsmRecurso);
+                            numeroMaquina = numMaquina;
+                            System.out.println("Digite o código da aula");
+                            String codigoAula = leitor.nextLine();
+                            histConsmRecurso.mostrarHistorico(numeroMaquina, codigoAula);
+                            break;
+                        }else{
+                            String motivoMaquina= ":--ERROR: O Sistema não localizou registro de maquinas na sua intituição";
+                            logs.adicionarMotivo(motivoMaquina);
+                        }
                     case 2:
                         desativarMaquina(con, numeroMaquina);
                         exibirMensagemDespedida();
@@ -200,6 +218,9 @@ public class AppHistorico {
             } while (opcaoUsuario != 2);
         } else {
             System.out.println("Dados de login inválidos");
+
+            String motivo = ":--ERROR: O Sistema não localizou nenhum dado relacionado ao email ('" + email + "') e a senha ('" + senha + "')!";
+            logs.adicionarMotivo(motivo);
         }
     }
 

@@ -63,51 +63,60 @@ public class HistConsmRecurso {
                 List<Componente> componentes = con.query("SELECT * FROM componente WHERE fkMaquina = ?",
                         new BeanPropertyRowMapper<>(Componente.class), maquinaId);
                 MonitorarSoftware(maquinaId, nomeAula);
+                if (componentes.size() == 3) {
+                    String motivoComponentes = ":--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!";
+                    logs.adicionarMotivo(motivoComponentes);
 
-                insertDadosNoBanco(componentes.get(0).getIdComponente(), consumoCpu, maquinaId, componentes.get(0).getFkHardware());
-                insertDadosNoBanco(componentes.get(1).getIdComponente(), consumoRam, maquinaId, componentes.get(1).getFkHardware());
-                insertDadosNoBanco(componentes.get(2).getIdComponente(), consumoDisco, maquinaId, componentes.get(2).getFkHardware());
-
-
-                List<Hardware> hardwares = con.query("SELECT * FROM hardware ",
-                        new BeanPropertyRowMapper<>(Hardware.class));
-
-                mostrarDadosEmTabela(consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas, hardwares.get(1), hardwares.get(2));
+                    insertDadosNoBanco(componentes.get(0).getIdComponente(), consumoCpu, maquinaId, componentes.get(0).getFkHardware());
+                    insertDadosNoBanco(componentes.get(1).getIdComponente(), consumoRam, maquinaId, componentes.get(1).getFkHardware());
+                    insertDadosNoBanco(componentes.get(2).getIdComponente(), consumoDisco, maquinaId, componentes.get(2).getFkHardware());
 
 
-                try {
-                    verificarLimiteEEnviarNotificacao("CPU", consumoCpu, componentes.get(0).getMax(), hardwares.get(0));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
+                    List<Hardware> hardwares = con.query("SELECT * FROM hardware ",
+                            new BeanPropertyRowMapper<>(Hardware.class));
+
+                    mostrarDadosEmTabela(consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas, hardwares.get(1), hardwares.get(2));
+
+
+                    try {
+                        verificarLimiteEEnviarNotificacao("CPU", consumoCpu, componentes.get(0).getMax(), hardwares.get(0));
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    try {
+                        verificarLimiteEEnviarNotificacao("RAM", consumoRam, componentes.get(1).getMax(), hardwares.get(1));
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    try {
+                        verificarLimiteEEnviarNotificacao("Disco", consumoDisco, componentes.get(2).getMax(), hardwares.get(2));
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    try {
+                        verificarLimiteEEnviarNotificacao("Quantidade janelas", qtdJanelasAbertas, 15, hardwares.get(0));
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+
+                    Maquina maquina = obterMaquina(maquinaId);
+
+                    // Chamar a função para criar e gravar no arquivo
+                    logs.gerarLog(maquina, (long) consumoCpu, consumoRam, consumoDisco);
+                }else{
+                    String motivoComponentes = ":--ERROR: a maquina com o ID:("+maquinaId+") não possui 3 componentes para ser monitorados)!";
+                    logs.adicionarMotivo(motivoComponentes);
+                    fecharSistema();
                 }
-                try {
-                    verificarLimiteEEnviarNotificacao("RAM", consumoRam, componentes.get(1).getMax(), hardwares.get(1));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-                try {
-                    verificarLimiteEEnviarNotificacao("Disco", consumoDisco, componentes.get(2).getMax(), hardwares.get(2));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-                try {
-                    verificarLimiteEEnviarNotificacao("Quantidade janelas", qtdJanelasAbertas, 15, hardwares.get(0));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
 
-Maquina maquina = obterMaquina(maquinaId);
-
-                // Chamar a função para criar e gravar no arquivo
-                logs.gerarLog(maquina, (long) consumoCpu, consumoRam, consumoDisco);
             }
         }, 1000, 10000);
     }
@@ -210,18 +219,18 @@ Maquina maquina = obterMaquina(maquinaId);
                     while ((linhaBusca = busca.readLine()) != null) {
                         for (Maquina.Processo processo : obterProcessos(nomeAula)) {
                             if (linhaBusca.contains(processo.getNomeAplicativo())) {
-                               strike[0] = true;
-                               nomeUltimoProcesso[0] = processo.getNomeAplicativo();
+                                strike[0] = true;
+                                nomeUltimoProcesso[0] = processo.getNomeAplicativo();
                             }
                         }
                     }
-                    if (strike[0] == true){
+                    if (strike[0] == true) {
                         LocalDateTime dataHora = LocalDateTime.now();
                         cadastrarStrike(idMaquina, dataHora);
                         botSlack.mensagemSoftware(nomeUltimoProcesso[0], obterMaquina(idMaquina));
                         System.out.println("Strike");
                         timer.cancel(); // Cancela o timer após cadastrar um "strike"
-                    }else{
+                    } else {
                         System.out.println("Você esta limpo amigo");
                     }
                 } catch (IOException e) {

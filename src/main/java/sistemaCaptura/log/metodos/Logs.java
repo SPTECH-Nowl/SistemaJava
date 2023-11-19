@@ -8,7 +8,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
@@ -50,15 +53,43 @@ public class Logs {
 
     private static void criarNovoArquivo(String caminhoCompleto, LocalDate dataAtual) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(caminhoCompleto))) {
-//            System.out.println("Novo log gerado com sucesso em: " + caminhoCompleto);
+            System.out.println("log gerado com sucesso em: " + caminhoCompleto);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private static void adicionarMotivo(String caminhoCompleto,Maquina maquina){
-        String mensagemSuporte = "Suporte foi solicitado para arrumar  a maquina (" + maquina.getNome() + ").";
+    public static void adicionarMotivo(String mensagem){
 
+        LocalDate dataAtual = LocalDate.now();
+        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyyMMdd", Locale.ENGLISH);
+        String nomeArquivo = dateFormat.format(dataAtual) + "_log.txt";
+        String caminhoCompleto = CAMINHO_ARQUIVO + nomeArquivo;
+
+
+        if (Files.exists(Path.of(caminhoCompleto))) {
+
+            LocalDateTime dataAtualLogs = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH);
+
+
+            // Formata a data de acordo com o formato especificado
+            String dataFormatadaLog = formatter.format(dataAtualLogs);
+
+            String mesagemLog =dataFormatadaLog+mensagem;
+
+            salvarMensagem(caminhoCompleto,mesagemLog);
+        } else {
+            criarNovoArquivo(caminhoCompleto, dataAtual);
+        }
+    }
+
+    private static void salvarMensagem(String caminhoCompleto,String mensagem ){
+        try (BufferedWriter writer = Files.newBufferedWriter(Path.of(caminhoCompleto), StandardOpenOption.APPEND)) {
+            writer.write(mensagem+"\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

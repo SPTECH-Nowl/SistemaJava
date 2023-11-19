@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class BotSlack {
 
+
     public void mensagemHardware(String componente) throws IOException, InterruptedException {
 
         String mensagemSlack = "O componente " + componente + " atingiu/ultrapassou o limite estabelecido pelo ADM";

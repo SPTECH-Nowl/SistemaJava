@@ -12,6 +12,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -55,25 +56,46 @@ public class HistConsmRecurso {
 
                 double usoDouble = looca.getProcessador().getUso();
                 int consumoCpu = (int) Math.round(usoDouble);
-                long consumoRam = looca.getMemoria().getEmUso();
-                long consumoDisco = looca.getGrupoDeDiscos().getTamanhoTotal();
+                double consumoRam = looca.getMemoria().getEmUso().doubleValue();
+                double consumoDisco = looca.getGrupoDeDiscos().getTamanhoTotal().doubleValue();
                 Integer qtdJanelasAbertas = looca.getGrupoDeJanelas().getTotalJanelas();
                 dataHora = LocalDateTime.now();
+
+
 
                 List<Componente> componentes = con.query("SELECT * FROM componente WHERE fkMaquina = ?",
                         new BeanPropertyRowMapper<>(Componente.class), maquinaId);
                 MonitorarSoftware(maquinaId, nomeAula);
-                if (componentes.size() == 3) {
+                if (componentes.size() >= 3) {
                     String motivoComponentes = ":--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!";
                     logs.adicionarMotivo(motivoComponentes);
 
-                    insertDadosNoBanco(componentes.get(0).getIdComponente(), consumoCpu, maquinaId, componentes.get(0).getFkHardware());
-                    insertDadosNoBanco(componentes.get(1).getIdComponente(), consumoRam, maquinaId, componentes.get(1).getFkHardware());
-                    insertDadosNoBanco(componentes.get(2).getIdComponente(), consumoDisco, maquinaId, componentes.get(2).getFkHardware());
-
-
                     List<Hardware> hardwares = con.query("SELECT * FROM hardware ",
                             new BeanPropertyRowMapper<>(Hardware.class));
+
+                    double Ram = 0.0;
+                    double bytes = consumoRam / 8.00;
+                    double gigabytes = bytes / (1024.0 * 1024 * 1024);
+                    double valorNormalizado = gigabytes / hardwares.get(1).getCapacidade();
+                    Ram = valorNormalizado * 100;
+                    double Disco = 0.0;
+                    double bytes2 = consumoDisco / 8.00;
+                    double gigabytes2 = bytes2 / (1024.0 * 1024 * 1024);
+                    double valorNormalizado2 = gigabytes2 / hardwares.get(2).getCapacidade();
+                    Disco = valorNormalizado2 * 100;
+                    DecimalFormat df = new DecimalFormat("#.##");
+
+                    // Formatando o número com duas casas decimais
+                    double ramFormatada = Math.round(Ram * 100.0) / 100.0;
+                    double discoFormatada = Math.round(Disco * 100.0) / 100.0;
+                    insertDadosNoBanco(componentes.get(0).getIdComponente(), consumoCpu, maquinaId, componentes.get(0).getFkHardware());
+                    insertDadosNoBanco(componentes.get(1).getIdComponente(), ramFormatada, maquinaId, componentes.get(1).getFkHardware());
+                    insertDadosNoBanco(componentes.get(2).getIdComponente(), discoFormatada, maquinaId, componentes.get(2).getFkHardware());
+
+
+
+
+
 
                     mostrarDadosEmTabela(consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas, hardwares.get(1), hardwares.get(2));
 
@@ -127,7 +149,7 @@ public class HistConsmRecurso {
         con.update(sql, dataHora, consumo, numeroMaquina, tipohardware, componente);
     }
 
-    private void mostrarDadosEmTabela(int consumoCpu, long consumoRam, long consumoDisco, int qtdJanelasAbertas, Hardware hardware1, Hardware hardware2) {
+    private void mostrarDadosEmTabela(int consumoCpu, double consumoRam, double consumoDisco, int qtdJanelasAbertas, Hardware hardware1, Hardware hardware2) {
 
 
         double Ram = 0.0;
@@ -159,7 +181,7 @@ public class HistConsmRecurso {
         System.out.println("+---------------------+--------------+-----------------+-------------+----------------------+");
     }
 
-    private void verificarLimiteEEnviarNotificacao(String componente, long consumo, int limite, Hardware hardware) throws IOException, InterruptedException {
+    private void verificarLimiteEEnviarNotificacao(String componente, double consumo, int limite, Hardware hardware) throws IOException, InterruptedException {
         final Boolean[] timeoutAtivo = {false};
         double porcentagem = 0.0;
         if (componente.equals("RAM")) {

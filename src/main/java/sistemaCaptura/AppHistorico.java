@@ -196,9 +196,16 @@ public class AppHistorico {
                             System.out.println("-".repeat(15));
                             System.out.println("Digite o número da máquina");
                             Integer numMaquina = in.nextInt();
-//                        cadastrarHardwareEComponente(con, numMaquina);
                             ativarMaquina(con, numMaquina, histConsmRecurso);
                             numeroMaquina = numMaquina;
+
+                            List<Permissao> permissaos = con.query("SELECT * FROM permissao WHERE emUso = 1",
+                                    new BeanPropertyRowMapper<>(Permissao.class));
+                            System.out.println("-".repeat(15));
+                            for (Permissao permissao : permissaos) {
+                                System.out.println("Codigo aula: " + permissao.getNome());
+                            }
+                            System.out.println("-".repeat(15));
                             System.out.println("Digite o código da aula");
                             String codigoAula = leitor.nextLine();
                             histConsmRecurso.mostrarHistorico(numeroMaquina, codigoAula);

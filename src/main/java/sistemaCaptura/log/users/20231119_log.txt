@@ -272,3 +272,111 @@ Consumo Disco: 1256255239680,00 GB
 Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
 O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
 
+2023-11-19 21:24:25:--SUCCESS: O Sistema iniciou normalmente
+2023-11-19 21:24:35:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('jhulia.silva@sptech.school') e a senha ('Salada123@')!
+2023-11-19 21:24:45:--SUCCESS: O Sistema localizou 2 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-19 21:25:04:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 14%
+Consumo RAM: 6920400896,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:25:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 14%
+Consumo RAM: 6862409728,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:25:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 29%
+Consumo RAM: 6885785600,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:25:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 17%
+Consumo RAM: 6879662080,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:25:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 19%
+Consumo RAM: 6880505856,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:25:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 18%
+Consumo RAM: 6889717760,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:25:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 12%
+Consumo RAM: 6889181184,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:33:23:--SUCCESS: O Sistema iniciou normalmente
+2023-11-19 21:33:40:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('will.adolpho@sptech.school') e a senha ('SelokoPai69#')!
+2023-11-19 21:33:41:--SUCCESS: O Sistema localizou 1 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-19 21:34:12:--SUCCESS: O Sistema iniciou normalmente
+2023-11-19 21:34:21:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('jhulia.silva@sptech.school') e a senha ('Salada123@')!
+2023-11-19 21:34:23:--SUCCESS: O Sistema localizou 2 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-19 21:34:39:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 14%
+Consumo RAM: 6799536128,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:34:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 14%
+Consumo RAM: 6812057600,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:34:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 23%
+Consumo RAM: 6820802560,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-19 21:35:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-19
+Nome da Máquina: Desktop-G1234
+Consumo CPU: 30%
+Consumo RAM: 6722805760,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-G1234).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+

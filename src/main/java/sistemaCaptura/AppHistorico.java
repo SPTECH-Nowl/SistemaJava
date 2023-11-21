@@ -144,26 +144,26 @@ public class AppHistorico {
             do {
                 System.out.println("-".repeat(15));
 
-                if (usuario instanceof AdmNowl) {
-                    System.out.println("Opções de ADM Nowl");
-                    System.out.println("N1 - listar máquinas disponíveis de alguma empresa");
-                    System.out.println("N2 - listar usuários de alguma empresa");
-                    System.out.println("N3 - Cadastrar usuário ");
-                }
+//                if (usuario instanceof AdmNowl) {
+//                    System.out.println("Opções de ADM Nowl");
+//                    System.out.println("N1 - listar máquinas disponíveis de alguma empresa");
+//                    System.out.println("N2 - listar usuários de alguma empresa");
+//                    System.out.println("N3 - Cadastrar usuário ");
+//                }
 
-                if (usuario instanceof Adiministrador) {
-                    System.out.println("Opções de Administrador");
-                    System.out.println("A1 - listar máquinas disponíveis da sua instituição");
-                    System.out.println("A2 - listar máquinas em uso da sua instituição");
-                    System.out.println("A3 - listar usuários da sua instituição");
-                    System.out.println("A4 - Cadastrar usuário ");
-                }
-                if (usuario instanceof Professor) {
-                    System.out.println("Opções de Professor");
-                    System.out.println("P1 - listar máquinas disponíveis da sua instituição");
-                    System.out.println("P2 - listar máquinas em uso da sua instituição");
-                    System.out.println("AP3 - listar usuários da sua instituição");
-                }
+//                if (usuario instanceof Adiministrador) {
+//                    System.out.println("Opções de Administrador");
+//                    System.out.println("A1 - listar máquinas disponíveis da sua instituição");
+//                    System.out.println("A2 - listar máquinas em uso da sua instituição");
+//                    System.out.println("A3 - listar usuários da sua instituição");
+//                    System.out.println("A4 - Cadastrar usuário ");
+//                }
+//                if (usuario instanceof Professor) {
+//                    System.out.println("Opções de Professor");
+//                    System.out.println("P1 - listar máquinas disponíveis da sua instituição");
+//                    System.out.println("P2 - listar máquinas em uso da sua instituição");
+//                    System.out.println("AP3 - listar usuários da sua instituição");
+//                }
 
                 System.out.println("----------|| Opções do sistema ||----------");
                 System.out.println("1 - Ativar máquina");

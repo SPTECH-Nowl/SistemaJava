@@ -265,7 +265,7 @@ public class HistConsmRecurso {
     }
 
     private List<Maquina.Processo> obterProcessos(String nomeAula) {
-        return con.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
+        return con.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo INNER JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
                 new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
     }
 

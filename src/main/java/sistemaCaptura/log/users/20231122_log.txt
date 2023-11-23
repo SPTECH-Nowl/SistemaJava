@@ -1,0 +1,1389 @@
+2023-11-22 22:24:53:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:25:22:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('joao.gabriel@sptech.school') e a senha ('Salada123@')!
+2023-11-22 22:26:04:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:26:14:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:26:38:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('joao.gabriel@sptech.school') e a senha ('Salada123@')!
+2023-11-22 22:26:39:--SUCCESS: O Sistema localizou 3 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-22 22:27:13:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 36%
+Consumo RAM: 7188922368,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:27:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 36%
+Consumo RAM: 7192256512,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:27:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 53%
+Consumo RAM: 7242964992,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:27:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 43%
+Consumo RAM: 7306801152,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:27:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 62%
+Consumo RAM: 7313100800,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:27:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 71%
+Consumo RAM: 7331250176,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:28:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 38%
+Consumo RAM: 7337943040,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:28:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 63%
+Consumo RAM: 7340351488,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:28:26:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 70%
+Consumo RAM: 7568879616,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:28:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 100%
+Consumo RAM: 7779282944,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:28:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 100%
+Consumo RAM: 7894417408,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:28:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 97%
+Consumo RAM: 7832879104,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:29:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 49%
+Consumo RAM: 7897780224,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:29:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 71%
+Consumo RAM: 7897477120,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:29:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 49%
+Consumo RAM: 7826788352,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:29:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 49%
+Consumo RAM: 7303421952,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:29:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 59%
+Consumo RAM: 7302680576,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:29:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 42%
+Consumo RAM: 7318990848,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:30:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 34%
+Consumo RAM: 7351836672,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:30:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 49%
+Consumo RAM: 7351259136,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:30:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 49%
+Consumo RAM: 7355834368,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:30:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 71%
+Consumo RAM: 7369584640,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:30:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 45%
+Consumo RAM: 7381901312,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:30:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 48%
+Consumo RAM: 7377428480,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:31:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 41%
+Consumo RAM: 7381053440,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:31:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 47%
+Consumo RAM: 7409401856,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:31:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 46%
+Consumo RAM: 7401676800,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:31:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 47%
+Consumo RAM: 7406014464,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:31:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 43%
+Consumo RAM: 7455793152,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:31:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 56%
+Consumo RAM: 7465422848,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:32:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 46%
+Consumo RAM: 7456706560,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:32:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 42%
+Consumo RAM: 7464267776,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:32:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 36%
+Consumo RAM: 7457570816,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:32:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 45%
+Consumo RAM: 7613210624,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:32:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 83%
+Consumo RAM: 7776813056,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:32:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 76%
+Consumo RAM: 7797297152,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:33:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 51%
+Consumo RAM: 7825690624,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:33:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 59%
+Consumo RAM: 7818162176,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:33:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 67%
+Consumo RAM: 7851307008,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:33:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 68%
+Consumo RAM: 7893270528,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:33:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 82%
+Consumo RAM: 7939899392,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:33:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 77%
+Consumo RAM: 7849119744,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:34:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 63%
+Consumo RAM: 7851032576,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:34:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 48%
+Consumo RAM: 7840456704,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:34:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 58%
+Consumo RAM: 7901351936,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:34:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 78%
+Consumo RAM: 7691952128,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:34:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 59%
+Consumo RAM: 7601852416,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:34:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 81%
+Consumo RAM: 7658274816,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:35:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 74%
+Consumo RAM: 7638896640,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:35:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 92%
+Consumo RAM: 7662862336,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:35:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 60%
+Consumo RAM: 7406116864,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:35:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 56%
+Consumo RAM: 7443562496,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:35:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 79%
+Consumo RAM: 7472562176,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:35:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 33%
+Consumo RAM: 7549861888,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:36:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 52%
+Consumo RAM: 7539527680,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:36:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 37%
+Consumo RAM: 7644102656,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:36:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 65%
+Consumo RAM: 7592566784,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:36:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 45%
+Consumo RAM: 7703474176,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:36:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 84%
+Consumo RAM: 7742656512,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:36:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 66%
+Consumo RAM: 7720566784,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:37:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 71%
+Consumo RAM: 7744110592,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:37:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 73%
+Consumo RAM: 7716167680,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:37:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 94%
+Consumo RAM: 7814066176,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:37:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 92%
+Consumo RAM: 7723892736,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:37:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 95%
+Consumo RAM: 7752171520,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:37:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 87%
+Consumo RAM: 7532314624,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:38:06:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 67%
+Consumo RAM: 7456563200,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:38:16:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 100%
+Consumo RAM: 7945904128,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:38:26:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 100%
+Consumo RAM: 7890296832,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:38:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 100%
+Consumo RAM: 7544414208,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:38:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 51%
+Consumo RAM: 7696343040,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:38:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 100%
+Consumo RAM: 7812464640,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:39:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 97%
+Consumo RAM: 7928397824,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:39:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 92%
+Consumo RAM: 8033296384,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:39:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 78%
+Consumo RAM: 7827238912,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:39:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 82%
+Consumo RAM: 7347601408,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:39:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 74%
+Consumo RAM: 7485739008,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:39:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 32%
+Consumo RAM: 7505039360,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:40:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 53%
+Consumo RAM: 7501045760,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:40:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 54%
+Consumo RAM: 7554813952,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:40:25:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 57%
+Consumo RAM: 7565279232,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:40:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 55%
+Consumo RAM: 7607881728,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:40:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 75%
+Consumo RAM: 7602515968,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:40:55:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 65%
+Consumo RAM: 7686868992,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:41:05:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 40%
+Consumo RAM: 7658545152,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:41:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+2023-11-22 22:41:52:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:42:12:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('tiago.asilva@sptech.school') e a senha ('WorkForce@23')!
+2023-11-22 22:42:23:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:42:36:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('tiago.asilva@sptech.school') e a senha ('WorkForce@23')!
+2023-11-22 22:42:37:--SUCCESS: O Sistema localizou 2 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-22 22:43:02:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 33%
+Consumo RAM: 7830597632,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:43:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 33%
+Consumo RAM: 7832436736,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:43:20:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 90%
+Consumo RAM: 7916707840,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:43:27:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 60%
+Consumo RAM: 7879024640,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:43:37:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 72%
+Consumo RAM: 7859417088,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:43:47:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 76%
+Consumo RAM: 7855661056,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:43:58:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 89%
+Consumo RAM: 7888842752,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:44:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 90%
+Consumo RAM: 7880605696,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:44:17:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 92%
+Consumo RAM: 7921881088,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:44:28:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 94%
+Consumo RAM: 7937744896,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:44:37:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 92%
+Consumo RAM: 7823298560,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:44:50:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 100%
+Consumo RAM: 7708553216,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:45:22:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:46:06:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:49:16:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:50:19:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:54:27:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 22:54:41:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('tiago.asilva@sptech.school') e a senha ('WorkForce@23')!
+2023-11-22 22:54:50:--SUCCESS: O Sistema localizou 4 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-22 22:55:26:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 52%
+Consumo RAM: 7207804928,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:55:31:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 52%
+Consumo RAM: 7227494400,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:55:41:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 48%
+Consumo RAM: 7246790656,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:55:51:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 60%
+Consumo RAM: 7327256576,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:56:02:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 46%
+Consumo RAM: 7315173376,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:56:11:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 51%
+Consumo RAM: 7333740544,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:56:21:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 45%
+Consumo RAM: 7353475072,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:56:31:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 72%
+Consumo RAM: 7396655104,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:56:41:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 76%
+Consumo RAM: 7422611456,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:56:51:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 57%
+Consumo RAM: 7402160128,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:57:01:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 60%
+Consumo RAM: 7411146752,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:57:11:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 64%
+Consumo RAM: 7424573440,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:57:20:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 58%
+Consumo RAM: 7476449280,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:57:31:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 52%
+Consumo RAM: 7471136768,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:57:41:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 54%
+Consumo RAM: 7487086592,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:57:51:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 54%
+Consumo RAM: 7479771136,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:58:01:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 46%
+Consumo RAM: 7471443968,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:58:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 70%
+Consumo RAM: 7463776256,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:58:21:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 50%
+Consumo RAM: 7489691648,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:58:33:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 48%
+Consumo RAM: 7507132416,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:58:42:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 50%
+Consumo RAM: 7564955648,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:58:52:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 61%
+Consumo RAM: 7535484928,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:59:02:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 72%
+Consumo RAM: 7560794112,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:59:15:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 92%
+Consumo RAM: 7577980928,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:59:29:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 62%
+Consumo RAM: 7625883648,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:59:39:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 72%
+Consumo RAM: 7588966400,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 22:59:51:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 66%
+Consumo RAM: 7555338240,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:00:01:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 44%
+Consumo RAM: 7581065216,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:00:10:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 63%
+Consumo RAM: 7629328384,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:00:23:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 65%
+Consumo RAM: 7621083136,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:00:37:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 44%
+Consumo RAM: 7871459328,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:00:49:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 62%
+Consumo RAM: 7860625408,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:01:02:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 69%
+Consumo RAM: 7907667968,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:01:12:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 60%
+Consumo RAM: 7955615744,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:01:23:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 84%
+Consumo RAM: 7934844928,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:01:33:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 79%
+Consumo RAM: 7960641536,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:01:43:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 96%
+Consumo RAM: 7976103936,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:02:11:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 77%
+Consumo RAM: 8060456960,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:02:45:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 100%
+Consumo RAM: 8050405376,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:03:09:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 99%
+Consumo RAM: 7630344192,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:03:22:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 72%
+Consumo RAM: 7648124928,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:03:37:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 69%
+Consumo RAM: 7705071616,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:03:49:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 61%
+Consumo RAM: 7709822976,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:04:00:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 59%
+Consumo RAM: 7716823040,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:04:16:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Laptop-Dell555
+Consumo CPU: 88%
+Consumo RAM: 7746895872,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Laptop-Dell555).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:04:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+2023-11-22 23:05:12:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:05:27:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:05:40:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:05:56:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:06:08:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('joao.gabriel@sptech.school') e a senha ('Salada123@')!
+2023-11-22 23:06:10:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:06:27:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:06:40:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:06:54:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('tiago.asilva@sptech.school') e a senha ('WorkForce@23')!
+2023-11-22 23:06:56:--SUCCESS: O Sistema localizou 3 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-22 23:07:35:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 64%
+Consumo RAM: 7724838912,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:07:39:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 64%
+Consumo RAM: 7735717888,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:07:50:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 80%
+Consumo RAM: 7747747840,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:08:00:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 73%
+Consumo RAM: 7733399552,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:08:10:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 62%
+Consumo RAM: 7802351616,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:08:20:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 66%
+Consumo RAM: 7840743424,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:08:30:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 85%
+Consumo RAM: 7858192384,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:08:40:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 99%
+Consumo RAM: 7852662784,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:08:49:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Workstation-HP123
+Consumo CPU: 60%
+Consumo RAM: 7833632768,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+

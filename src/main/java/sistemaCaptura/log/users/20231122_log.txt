@@ -1387,3 +1387,668 @@ Consumo Disco: 1256255239680,00 GB
 Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Workstation-HP123).
 O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
 
+2023-11-22 23:37:51:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:38:18:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('tiago.asilva@sptech.school') e a senha ('WorkForce@23')!
+2023-11-22 23:38:20:--SUCCESS: O Sistema localizou 1 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-22 23:38:47:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 36%
+Consumo RAM: 7743574016,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:38:51:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 36%
+Consumo RAM: 7745368064,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:39:02:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 92%
+Consumo RAM: 7775399936,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:39:12:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 73%
+Consumo RAM: 7790878720,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:39:22:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 54%
+Consumo RAM: 7857123328,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:39:32:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 42%
+Consumo RAM: 7906603008,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:39:42:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 66%
+Consumo RAM: 7887835136,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:39:52:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 39%
+Consumo RAM: 7461912576,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:40:02:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 31%
+Consumo RAM: 7385227264,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:40:11:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 45%
+Consumo RAM: 7359983616,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:40:21:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 24%
+Consumo RAM: 7362158592,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:40:31:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 66%
+Consumo RAM: 7382585344,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:40:42:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 33%
+Consumo RAM: 7416324096,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:40:52:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 83%
+Consumo RAM: 7617847296,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:41:01:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 74%
+Consumo RAM: 7641833472,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:41:11:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 100%
+Consumo RAM: 7589896192,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:41:21:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 53%
+Consumo RAM: 7566315520,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:41:31:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 40%
+Consumo RAM: 7552892928,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:41:42:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 45%
+Consumo RAM: 7538741248,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:41:52:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 19%
+Consumo RAM: 7581786112,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:42:02:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 19%
+Consumo RAM: 7544147968,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:42:13:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 48%
+Consumo RAM: 7529123840,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:42:22:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 34%
+Consumo RAM: 7529009152,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:42:32:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 30%
+Consumo RAM: 7547047936,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:42:43:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 39%
+Consumo RAM: 7580143616,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:42:56:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-AL2022
+Consumo CPU: 27%
+Consumo RAM: 7575322624,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-AL2022).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:43:06:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+2023-11-22 23:44:42:--SUCCESS: O Sistema iniciou normalmente
+2023-11-22 23:46:15:--ERROR: O Sistema não localizou nenhum dado relacionado ao email ('tiago.asilva@sptech.school]') e a senha ('WorkForce@23')!
+2023-11-22 23:46:28:--SUCCESS: O Sistema localizou 1 registro(s)  relacionado ao email ('tiago.asilva@sptech.school') e a senha ('WorkForce@23')!
+2023-11-22 23:46:32:--SUCCESS: O Sistema localizou 1 maquina(s) registrada(s)  relacionadas a intituição!
+2023-11-22 23:47:03:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 16%
+Consumo RAM: 7393742848,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:47:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 16%
+Consumo RAM: 7377248256,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:47:19:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 37%
+Consumo RAM: 7424679936,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:47:29:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 35%
+Consumo RAM: 7492755456,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:47:39:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 33%
+Consumo RAM: 7488290816,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:47:49:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 28%
+Consumo RAM: 7495618560,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:47:59:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 19%
+Consumo RAM: 7493160960,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:48:09:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 20%
+Consumo RAM: 7497764864,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:48:18:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 22%
+Consumo RAM: 7503732736,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:48:28:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 40%
+Consumo RAM: 7676264448,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:48:38:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 68%
+Consumo RAM: 7498772480,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:48:48:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 34%
+Consumo RAM: 7511650304,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:48:58:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 24%
+Consumo RAM: 7457042432,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:49:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 22%
+Consumo RAM: 7397638144,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:49:18:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 17%
+Consumo RAM: 7560613888,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:49:28:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 68%
+Consumo RAM: 7458619392,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:49:38:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 25%
+Consumo RAM: 7437025280,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:49:48:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 28%
+Consumo RAM: 7597236224,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:49:58:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 53%
+Consumo RAM: 7214645248,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:50:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 19%
+Consumo RAM: 7810592768,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:50:18:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 92%
+Consumo RAM: 7818817536,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:50:28:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 22%
+Consumo RAM: 7748009984,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:50:38:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 20%
+Consumo RAM: 7729598464,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:50:48:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 27%
+Consumo RAM: 7726563328,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:50:58:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 30%
+Consumo RAM: 7798943744,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:51:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 19%
+Consumo RAM: 7783882752,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:51:18:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 38%
+Consumo RAM: 7787438080,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:51:28:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 26%
+Consumo RAM: 7847796736,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:51:38:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 15%
+Consumo RAM: 7848529920,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:51:48:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 29%
+Consumo RAM: 7917740032,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:51:58:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 39%
+Consumo RAM: 7212638208,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:52:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 18%
+Consumo RAM: 7215534080,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:52:18:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 31%
+Consumo RAM: 7250894848,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:52:28:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 27%
+Consumo RAM: 7238283264,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:52:38:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 21%
+Consumo RAM: 7007309824,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:52:48:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 37%
+Consumo RAM: 7606075392,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:52:58:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 100%
+Consumo RAM: 7578877952,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:53:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 33%
+Consumo RAM: 7639908352,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:53:18:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 29%
+Consumo RAM: 7706812416,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:53:28:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 9%
+Consumo RAM: 7874703360,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:53:38:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 55%
+Consumo RAM: 7762190336,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:53:48:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 29%
+Consumo RAM: 7668101120,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:53:58:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 33%
+Consumo RAM: 7677087744,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:54:08:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 14%
+Consumo RAM: 7990435840,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:54:18:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 73%
+Consumo RAM: 7584071680,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:54:28:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 22%
+Consumo RAM: 7495983104,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+
+2023-11-22 23:54:38:--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!
+Data/Hora: 2023-11-22
+Nome da Máquina: Desktop-Five
+Consumo CPU: 28%
+Consumo RAM: 7587639296,00 bytes
+Consumo Disco: 1256255239680,00 GB
+Mensagem para Suporte: Suporte foi solicitado para arrumar  a maquina (Desktop-Five).
+O consumo de CPU estourou o máximo sugerido (60%). O consumo de RAM atingiu o máximo sugerido (60%) de acordo com o nome da máquina.
+

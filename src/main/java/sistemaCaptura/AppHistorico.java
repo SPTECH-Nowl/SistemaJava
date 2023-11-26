@@ -152,31 +152,21 @@ public class AppHistorico {
 
             do {
                 System.out.println("-".repeat(15));
-
-//                if (usuario instanceof AdmNowl) {
-//                    System.out.println("Opções de ADM Nowl");
-//                    System.out.println("N1 - listar máquinas disponíveis de alguma empresa");
-//                    System.out.println("N2 - listar usuários de alguma empresa");
-//                    System.out.println("N3 - Cadastrar usuário ");
-//                }
-
-//                if (usuario instanceof Adiministrador) {
-//                    System.out.println("Opções de Administrador");
-//                    System.out.println("A1 - listar máquinas disponíveis da sua instituição");
-//                    System.out.println("A2 - listar máquinas em uso da sua instituição");
-//                    System.out.println("A3 - listar usuários da sua instituição");
-//                    System.out.println("A4 - Cadastrar usuário ");
-//                }
-//                if (usuario instanceof Professor) {
-//                    System.out.println("Opções de Professor");
-//                    System.out.println("P1 - listar máquinas disponíveis da sua instituição");
-//                    System.out.println("P2 - listar máquinas em uso da sua instituição");
-//                    System.out.println("AP3 - listar usuários da sua instituição");
-//                }
-
                 System.out.println("----------|| Opções do sistema ||----------");
                 System.out.println("1 - Ativar máquina");
-                System.out.println("2 - Fechar sistema");
+                if (usuario instanceof Professor) {
+                    System.out.println("2- Opções de Professor");
+                }
+                if (usuario instanceof Adiministrador) {
+                    System.out.println("2- Opções de Administrador");
+                }
+                if (usuario instanceof AdmNowl) {
+                    System.out.println("2- Opções de ADM Nowl");
+                }
+                if (usuario instanceof Aluno) {
+                    System.out.println("2- Opções de Aluno");
+                }
+                System.out.println("3 - Fechar sistema");
                 System.out.println("-".repeat(15));
 
                 opcaoUsuario = in.nextInt();
@@ -235,6 +225,20 @@ public class AppHistorico {
                             logs.adicionarMotivo(motivoMaquina);
                         }
                     case 2:
+                        if (usuario instanceof Professor) {
+                            ((Professor) usuario).opcaoProfessor();
+                        }
+                        if (usuario instanceof Adiministrador) {
+                            ((Adiministrador) usuario).opcaoAdiministrador();
+                        }
+                        if (usuario instanceof AdmNowl) {
+                           ((AdmNowl) usuario).opcaoAdmNowl();
+                        }
+                        if (usuario instanceof Aluno) {
+                            ((Aluno) usuario).opcaoAluno();
+                        }
+                        break;
+                    case 3:
                         desativarMaquina(con, numeroMaquina);
                         exibirMensagemDespedida();
                         histConsmRecurso.fecharSistema();// Isso encerrará o programa
@@ -242,7 +246,7 @@ public class AppHistorico {
                     default:
                         System.out.println("Opção inválida");
                 }
-            } while (opcaoUsuario != 2);
+            } while (opcaoUsuario != 3);
         } else {
             System.out.println("Dados de login inválidos");
 
@@ -414,7 +418,7 @@ public class AppHistorico {
         if (conexao.getDev()) {
 
             con.update("INSERT INTO componente (max, fkMaquina, fkHardware) VALUES (?, ?, ?)", max, idMaquina, idHardware);
-        }else{
+        } else {
             con.update("INSERT INTO componente (max, fkMaquina, fkHardware) VALUES (?, ?, ?)", max, idMaquina, idHardware);
 
         }

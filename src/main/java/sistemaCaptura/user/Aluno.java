@@ -1,7 +1,13 @@
 package sistemaCaptura.user;
 
-public class Aluno extends Usuario{
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import sistemaCaptura.conexao.Conexao;
 
+import java.util.List;
+
+public class Aluno extends Usuario{
+    static Conexao conexao = new Conexao();
     public  Aluno(){}
 
     public Aluno(Usuario usuario) {
@@ -11,14 +17,13 @@ public class Aluno extends Usuario{
     public Aluno(Integer idUsuario, String nome, String email, String senha, Integer fkInstituicao, Integer fkTipoUsuario) {
         super(idUsuario, nome, email, senha, fkInstituicao, fkTipoUsuario);
     }
+    public void opcaoAluno() {
+        JdbcTemplate con = conexao.getConexaoDoBanco();
 
-    public void listar() {
-        System.out.println("Não tem autorização para executar esse comando");
+        System.out.println("Essa opção esta bloqueada para o seu nivel de usuario");
     }
-
-    @Override
     public String toString() {
-        return "AdmNowl{} " + super.toString();
+        return "aluno{} " + super.toString();
     }
 
 }

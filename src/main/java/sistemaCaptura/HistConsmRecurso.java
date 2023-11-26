@@ -33,9 +33,9 @@ public class HistConsmRecurso {
     Timer timer = new Timer();
     Timer timer02 = new Timer();
 
-    BotSlack botSlack = new BotSlack();
+    BotSlack botSlack = new BotSlack("xoxb-6077098544578-6249289926579-hAGEJ3gRIXH8KqzDul23BZto","C062962NFKM");
     Logs logs = new Logs();
-
+    Integer qtdStrike=0;
     public HistConsmRecurso() {
     }
 
@@ -208,7 +208,8 @@ public class HistConsmRecurso {
             // Enviar notificação por Slack
             if (!timeoutAtivo[0]) {
                 timeoutAtivo[0] = true;
-                botSlack.mensagemHardware(componente);
+                String mensagemSlack = "O componente " + componente + " atingiu/ultrapassou o limite estabelecido pelo ADM";
+                botSlack.enviarMensagem(mensagemSlack);
                 Timer timer = new Timer();
                 timer.schedule(new TimerTask() {
                     @Override
@@ -246,24 +247,29 @@ public class HistConsmRecurso {
                             }
                         }
                     }
-                    if (strike[0] == true) {
+                    if (strike[0] == true ) {
                         LocalDateTime dataHora = LocalDateTime.now();
                         cadastrarStrike(idMaquina, dataHora);
-                        botSlack.mensagemSoftware(nomeUltimoProcesso[0], obterMaquina(idMaquina));
+                        Maquina maquina=obterMaquina(idMaquina);
+
+                        String mensagemSlack = "ALERT -- A maquina ("+maquina.getNome()+ ") esta sendo utilizado de maneira indevida um dos processo que estava sendo utilizando: "+nomeUltimoProcesso[0]+ " que é marcado como um dos processo não permitido";
+
+                        botSlack.enviarMensagem(mensagemSlack);
                         System.out.println("Strike");
+                        qtdStrike++;
+                        if (qtdStrike==3){
+                            mensagemSlack = "ALERT -- A maquina ("+maquina.getNome()+ ") esta com 3 strikes cadastrados desde o começo da operação do sistema: essa mensagem sera enviada pelo slack e o aluno responsavel pela maquina será notificado. ";
+
+                            botSlack.enviarMensagem(mensagemSlack );
+                        }
                         timer.cancel(); // Cancela o timer após cadastrar um "strike"
-                    } else {
-                        System.out.println("Você esta limpo amigo");
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
                 }
             }
         }, 5000, 15000); // Inicia após 5 segundos e repete a cada 15 segundos
     }
-
     private List<Maquina.Processo> obterProcessos(String nomeAula) {
         return con.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo INNER JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
                 new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);

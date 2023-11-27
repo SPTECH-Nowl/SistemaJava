@@ -36,7 +36,6 @@ public class AppHistorico {
             System.out.println("Escolha uma das opções abaixo");
             System.out.println("1 - Fazer login");
             System.out.println("2 - Sair");
-            System.out.println("3 - Cadastrar máquina");
             System.out.println("-".repeat(15));
 
             escolha = in.nextInt();
@@ -49,9 +48,7 @@ public class AppHistorico {
                     exibirMensagemDespedida();
                     histConsmRecurso.fecharSistema();
                     break;
-                case 3:
-                    cadastrarMaquina(con);
-                    break;
+
                 default:
                     System.out.println("Opção inválida");
             }
@@ -158,7 +155,7 @@ public class AppHistorico {
                     System.out.println("2- Opções de Professor");
                 }
                 if (usuario instanceof Adiministrador) {
-                    System.out.println("2- Opções de Administrador");
+                    System.out.println("2- Cadastrar maquina");
                 }
                 if (usuario instanceof AdmNowl) {
                     System.out.println("2- Opções de ADM Nowl");
@@ -229,7 +226,7 @@ public class AppHistorico {
                             ((Professor) usuario).opcaoProfessor();
                         }
                         if (usuario instanceof Adiministrador) {
-                            ((Adiministrador) usuario).opcaoAdiministrador();
+                            cadastrarMaquina(con);
                         }
                         if (usuario instanceof AdmNowl) {
                             ((AdmNowl) usuario).opcaoAdmNowl();

@@ -21,11 +21,7 @@ import java.util.TimerTask;
 
 public class HistConsmRecurso {
 
-    private Integer idHistorico;
     private LocalDateTime dataHora = LocalDateTime.now();
-    private Integer fkMaquina;
-    private Integer fkHardware;
-    private Integer fkComponente;
 
     Conexao conexao = new Conexao();
     JdbcTemplate con = conexao.getConexaoDoBanco();
@@ -33,7 +29,7 @@ public class HistConsmRecurso {
     Timer timer = new Timer();
     Timer timer02 = new Timer();
 
-    BotSlack botSlack = new BotSlack("xoxb-6077098544578-6249289926579-hAGEJ3gRIXH8KqzDul23BZto","C062962NFKM");
+    BotSlack botSlack = new BotSlack("xoxb-6077098544578-6249289926579-6x7cPWRKwGA860AQbKZ4vpiq","C062962NFKM");
     Logs logs = new Logs();
     Integer qtdStrike=0;
     public HistConsmRecurso() {

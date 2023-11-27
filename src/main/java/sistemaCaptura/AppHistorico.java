@@ -327,9 +327,9 @@ public class AppHistorico {
         // Recuperar o ID da máquina recém-cadastrada
 
         // Cadastrar hardware e componente para a máquina
-        cadastrarHardwareEComponente(con, idMaquina);
-        cadastrarHardwareEComponente(con, idMaquina);
-        cadastrarHardwareEComponente(con, idMaquina);
+        cadastrarHardwareEComponente(con, idMaquina,1);
+        cadastrarHardwareEComponente(con, idMaquina,2);
+        cadastrarHardwareEComponente(con, idMaquina,3);
 
         System.out.println("Máquina cadastrada com sucesso!");
     }
@@ -357,50 +357,55 @@ public class AppHistorico {
         }
     }
 
-    private static void cadastrarHardwareEComponente(JdbcTemplate con, Integer idMaquina) {
+    private static void cadastrarHardwareEComponente(JdbcTemplate con, Integer idMaquina,Integer tipo) {
         Scanner leitor = new Scanner(System.in);
 
         // Cadastrar hardware
-        System.out.println("Digite o fabricante do hardware:");
+        if(tipo == 1){
+            System.out.println("Digite o fabricante do hardware(CPU):");
+        } else if (tipo ==2) {
+            System.out.println("Digite o fabricante do hardware(RAM):");
+        } else if (tipo ==3) {
+            System.out.println("Digite o fabricante do hardware(Disco):");
+        }
         String fabricante = leitor.nextLine();
-
-        System.out.println("Digite o modelo do hardware:");
+        if(tipo == 1){
+            System.out.println("Digite o modelo do hardware(CPU):");
+        } else if (tipo ==2) {
+            System.out.println("Digite o modelo do hardware(RAM):");
+        } else if (tipo ==3) {
+            System.out.println("Digite o modelo do hardware(Disco):");
+        }
         String modelo = leitor.nextLine();
-
-        System.out.println("Digite a capacidade do hardware:");
+        if(tipo == 1){
+            System.out.println("Digite a capacidade do hardware(CPU):");
+        } else if (tipo ==2) {
+            System.out.println("Digite a capacidade do hardware(RAM):");
+        } else if (tipo ==3) {
+            System.out.println("Digite a capacidade do hardware(Disco):");
+        }
         double capacidade = leitor.nextDouble();
-
-
-        System.out.println("Digite a especificidade do hardware:");
+        if(tipo == 1){
+            System.out.println("Digite a especificidade do hardware(CPU):");
+        } else if (tipo ==2) {
+            System.out.println("Digite a especificidade do hardware(RAM):");
+        } else if (tipo ==3) {
+            System.out.println("Digite a especificidade do hardware(Disco):");
+        }
         String especificidade = leitor.nextLine();
 
         // Cadastrar o tipo de hardware
-        System.out.println("Digite o tipo de hardware (ex: CPU, GPU, Memória):");
-        String tipoHardware = leitor.nextLine();
 
-        // Cadastrar o tipo de hardware no banco de dados
-        if (conexao.getDev()) {
-            con.update("INSERT INTO tipoHardware (tipo) VALUES (?)", tipoHardware);
-        } else {
-            con.update("INSERT INTO tipoHardware (tipo) VALUES (?)", tipoHardware);
 
-        }
+
         // Recuperar o ID do tipo de hardware recém-cadastrado
-        Integer fkTipoHardware;
-        if (conexao.getDev()) {
-            fkTipoHardware = con.queryForObject("SELECT MAX(idTipoHardware) FROM tipoHardware", Integer.class);
-
-        } else {
-            fkTipoHardware = con.queryForObject("SELECT MAX(idTipoHardware) FROM tipoHardware", Integer.class);
-
-        }
 
         // Cadastrar o hardware no banco de dados, incluindo fkTipoHardware
         if (conexao.getDev()) {
 
-            con.update("INSERT INTO hardware (fabricante, modelo, capacidade, especificidade, fkTipoHardware) VALUES (?, ?, ?, ?, ?)", fabricante, modelo, capacidade, especificidade, fkTipoHardware);
+            con.update("INSERT INTO hardware (fabricante, modelo, capacidade, especificidade, fkTipoHardware) VALUES (?, ?, ?, ?, ?)", fabricante, modelo, capacidade, especificidade, tipo);
         } else {
-            con.update("INSERT INTO hardware (fabricante, modelo, capacidade, especificidade, fkTipoHardware) VALUES (?, ?, ?, ?, ?)", fabricante, modelo, capacidade, especificidade, fkTipoHardware);
+            con.update("INSERT INTO hardware (fabricante, modelo, capacidade, especificidade, fkTipoHardware) VALUES (?, ?, ?, ?, ?)", fabricante, modelo, capacidade, especificidade, tipo);
         }
         // Recuperar o ID do hardware recém-cadastrado
         Integer idHardware;
@@ -412,7 +417,14 @@ public class AppHistorico {
         // Cadastrar componente
         System.out.println("Digite a porcentagem máxima para o componente (deixe em branco para usar o valor padrão):");
         String inputMax = leitor.nextLine();
-        Integer max = (inputMax.isEmpty()) ? null : Integer.parseInt(inputMax);
+        Integer max;
+        boolean verificaStringNula = inputMax.isEmpty();
+        if(verificaStringNula){
+            max= 60;
+        }else{
+            max= Integer.parseInt(inputMax);
+        }
+
 
         // Cadastrar o componente no banco de dados, incluindo fkTipoHardware
         if (conexao.getDev()) {

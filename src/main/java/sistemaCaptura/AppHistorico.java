@@ -205,11 +205,11 @@ public class AppHistorico {
                             numeroMaquina = numMaquina;
                             List<Permissao> permissaos;
                             if (conexao.getDev()) {
-                                permissaos = con.query("SELECT * FROM permissao WHERE emUso = 1",
-                                        new BeanPropertyRowMapper<>(Permissao.class));
+                                permissaos = con.query("SELECT * FROM permissao WHERE emUso = 1 AND fkUsuario =?",
+                                        new BeanPropertyRowMapper<>(Permissao.class),usuario.getIdUsuario());
                             } else {
-                                permissaos = con.query("SELECT * FROM permissao WHERE emUso = 1",
-                                        new BeanPropertyRowMapper<>(Permissao.class));
+                                permissaos = con.query("SELECT * FROM permissao WHERE emUso = 1 AND fkUsuario =?",
+                                        new BeanPropertyRowMapper<>(Permissao.class),usuario.getIdUsuario());
                             }
                             System.out.println("-".repeat(15));
                             for (Permissao permissao : permissaos) {
@@ -232,7 +232,7 @@ public class AppHistorico {
                             ((Adiministrador) usuario).opcaoAdiministrador();
                         }
                         if (usuario instanceof AdmNowl) {
-                           ((AdmNowl) usuario).opcaoAdmNowl();
+                            ((AdmNowl) usuario).opcaoAdmNowl();
                         }
                         if (usuario instanceof Aluno) {
                             ((Aluno) usuario).opcaoAluno();

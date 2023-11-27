@@ -35,7 +35,6 @@ public class Logs {
 
     private static void adicionarMensagens(String caminhoCompleto, LocalDate dataAtual, Maquina maquina, Long consumoCpu, double consumoRam, double consumoDisco) {
         try (BufferedWriter writer = Files.newBufferedWriter(Path.of(caminhoCompleto), StandardOpenOption.APPEND)) {
-            System.out.println(caminhoCompleto);
             String mensagemSuporte = "Suporte foi solicitado para arrumar a maquina (" + maquina.getNome() + ").";
 
             // Adicionar mensagem relacionada ao consumo máximo de CPU e RAM
@@ -51,7 +50,6 @@ public class Logs {
     }
 
     private static void criarNovoArquivo(String caminhoCompleto, LocalDate dataAtual) {
-        System.out.println(caminhoCompleto);
 
         // Verifica se o sistema operacional é Windows
         boolean isWindows = System.getProperty("os.name").toLowerCase().contains("win");
@@ -67,7 +65,6 @@ public class Logs {
             }
 
             try (BufferedWriter writer = Files.newBufferedWriter(Path.of(caminhoCompleto))) {
-                System.out.println("log gerado com sucesso em: " + caminhoCompleto);
             } catch (IOException e) {
                 e.printStackTrace();
             }

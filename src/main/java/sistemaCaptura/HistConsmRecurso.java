@@ -28,15 +28,17 @@ public class HistConsmRecurso {
     Looca looca = new Looca();
     Timer timer = new Timer();
     Timer timer02 = new Timer();
+    List<Hardware> hardwares;
 
-    BotSlack botSlack = new BotSlack("xoxb-6077098544578-6249289926579-6x7cPWRKwGA860AQbKZ4vpiq","C062962NFKM");
+    BotSlack botSlack = new BotSlack("xoxb-6077098544578-6249289926579-6x7cPWRKwGA860AQbKZ4vpiq", "C062962NFKM");
     Logs logs = new Logs();
-    Integer qtdStrike=0;
+    Integer qtdStrike = 0;
+
     public HistConsmRecurso() {
     }
 
     public void mostrarHistorico(Integer maquinaId, String nomeAula) {
-
+        MonitorarSoftware(maquinaId, nomeAula);
         insertHistorico(maquinaId, nomeAula);
     }
 
@@ -58,15 +60,13 @@ public class HistConsmRecurso {
                 dataHora = LocalDateTime.now();
 
 
-
                 List<Componente> componentes = con.query("SELECT * FROM componente WHERE fkMaquina = ?",
                         new BeanPropertyRowMapper<>(Componente.class), maquinaId);
-                MonitorarSoftware(maquinaId, nomeAula);
                 if (componentes.size() >= 3) {
                     String motivoComponentes = ":--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!";
                     logs.adicionarMotivo(motivoComponentes);
 
-                    List<Hardware> hardwares = con.query("SELECT * FROM hardware ",
+                    hardwares = con.query("SELECT * FROM hardware ",
                             new BeanPropertyRowMapper<>(Hardware.class));
 
                     double Ram = 0.0;
@@ -87,10 +87,6 @@ public class HistConsmRecurso {
                     insertDadosNoBanco(componentes.get(0).getIdComponente(), consumoCpu, maquinaId, componentes.get(0).getFkHardware());
                     insertDadosNoBanco(componentes.get(1).getIdComponente(), ramFormatada, maquinaId, componentes.get(1).getFkHardware());
                     insertDadosNoBanco(componentes.get(2).getIdComponente(), discoFormatada, maquinaId, componentes.get(2).getFkHardware());
-
-
-
-
 
 
                     mostrarDadosEmTabela(consumoCpu, consumoRam, consumoDisco, qtdJanelasAbertas, hardwares.get(1), hardwares.get(2));
@@ -129,8 +125,8 @@ public class HistConsmRecurso {
 
                     // Chamar a função para criar e gravar no arquivo
                     logs.gerarLog(maquina, (long) consumoCpu, consumoRam, consumoDisco);
-                }else{
-                    String motivoComponentes = ":--ERROR: a maquina com o ID:("+maquinaId+") não possui 3 componentes para ser monitorados)!";
+                } else {
+                    String motivoComponentes = ":--ERROR: a maquina com o ID:(" + maquinaId + ") não possui 3 componentes para ser monitorados)!";
                     logs.adicionarMotivo(motivoComponentes);
                     fecharSistema();
                 }
@@ -234,38 +230,40 @@ public class HistConsmRecurso {
 
                     BufferedReader busca = new BufferedReader(new InputStreamReader(process.getInputStream()));
                     String linhaBusca;
+                    if (qtdStrike <= 2) {
+                        while ((linhaBusca = busca.readLine()) != null) {
+                            for (Maquina.Processo processo : obterProcessos(nomeAula)) {
+                                if (linhaBusca.contains(processo.getNomeAplicativo())) {
+                                    Maquina maquina = obterMaquina(idMaquina);
 
-                    while ((linhaBusca = busca.readLine()) != null) {
-                        for (Maquina.Processo processo : obterProcessos(nomeAula)) {
-                            if (linhaBusca.contains(processo.getNomeAplicativo())) {
-                                strike[0] = true;
-                                nomeUltimoProcesso[0] = processo.getNomeAplicativo();
+                                    strike[0] = true;
+                                    System.out.println("Achou algo que nao devia");
+                                    nomeUltimoProcesso[0] = processo.getNomeAplicativo();
+
+                                    String mensagemSlack = "ALERT -- A maquina (" + maquina.getNome() + ") esta sendo utilizado de maneira indevida um dos processo que estava sendo utilizando: " + nomeUltimoProcesso[0] + " que é marcado como um dos processo não permitido";
+                                    System.out.println("Deu strike");
+                                    botSlack.enviarMensagem(mensagemSlack);
+                                    qtdStrike++;
+                                    if (qtdStrike == 2) {
+                                        mensagemSlack = "ALERT -- A maquina (" + maquina.getNome() + ") esta com 3 strikes cadastrados desde o começo da operação do sistema: essa mensagem sera enviada pelo slack e o aluno responsavel pela maquina será notificado. ";
+
+                                        botSlack.enviarMensagem(mensagemSlack);
+                                    }
+                                    LocalDateTime dataHora = LocalDateTime.now();
+                                    cadastrarStrike(idMaquina, dataHora);
+                                    return;
+                                }
                             }
                         }
                     }
-                    if (strike[0] == true && qtdStrike <3) {
-                        LocalDateTime dataHora = LocalDateTime.now();
-                        cadastrarStrike(idMaquina, dataHora);
-                        Maquina maquina=obterMaquina(idMaquina);
 
-                        String mensagemSlack = "ALERT -- A maquina ("+maquina.getNome()+ ") esta sendo utilizado de maneira indevida um dos processo que estava sendo utilizando: "+nomeUltimoProcesso[0]+ " que é marcado como um dos processo não permitido";
-
-                        botSlack.enviarMensagem(mensagemSlack);
-                        System.out.println("Strike");
-                        qtdStrike++;
-                        if (qtdStrike==2){
-                            mensagemSlack = "ALERT -- A maquina ("+maquina.getNome()+ ") esta com 3 strikes cadastrados desde o começo da operação do sistema: essa mensagem sera enviada pelo slack e o aluno responsavel pela maquina será notificado. ";
-
-                            botSlack.enviarMensagem(mensagemSlack );
-                        }
-                        timer.cancel(); // Cancela o timer após cadastrar um "strike"
-                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-        }, 5000, 15000); // Inicia após 5 segundos e repete a cada 15 segundos
+        }, 0000, 15000); // Inicia após 5 segundos e repete a cada 15 segundos
     }
+
     private List<Maquina.Processo> obterProcessos(String nomeAula) {
         return con.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo INNER JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
                 new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);

@@ -243,7 +243,7 @@ public class HistConsmRecurso {
                             }
                         }
                     }
-                    if (strike[0] == true ) {
+                    if (strike[0] == true && qtdStrike <3) {
                         LocalDateTime dataHora = LocalDateTime.now();
                         cadastrarStrike(idMaquina, dataHora);
                         Maquina maquina=obterMaquina(idMaquina);
@@ -253,7 +253,7 @@ public class HistConsmRecurso {
                         botSlack.enviarMensagem(mensagemSlack);
                         System.out.println("Strike");
                         qtdStrike++;
-                        if (qtdStrike==3){
+                        if (qtdStrike==2){
                             mensagemSlack = "ALERT -- A maquina ("+maquina.getNome()+ ") esta com 3 strikes cadastrados desde o começo da operação do sistema: essa mensagem sera enviada pelo slack e o aluno responsavel pela maquina será notificado. ";
 
                             botSlack.enviarMensagem(mensagemSlack );

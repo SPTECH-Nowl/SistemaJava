@@ -122,13 +122,9 @@ public class AppHistorico {
             senha = leitor.nextLine();
         }
         List<Usuario> usuarios;
-        if (conexao.getDev()) {
+
             usuarios = con.query("SELECT * FROM usuario WHERE email = ? AND senha = ?",
                     new BeanPropertyRowMapper<>(Usuario.class), email, senha);
-        } else {
-            usuarios = conSer.query("SELECT * FROM usuario WHERE email = ? AND senha = ?",
-                    new BeanPropertyRowMapper<>(Usuario.class), email, senha);
-        }
         if (usuarios.size() > 0) {
             String motivo = ":--SUCCESS: O Sistema localizou " + usuarios.size() + " registro(s)  relacionado ao email ('" + email + "') e a senha ('" + senha + "')!";
             logs.adicionarMotivo(motivo);
@@ -212,7 +208,7 @@ public class AppHistorico {
                             System.out.println("-".repeat(15));
                             for (Permissao permissao : permissaos) {
                                 System.out.println("Codigo aula: " + permissao.getNome());
-                            }
+                            }1
                             System.out.println("-".repeat(15));
                             System.out.println("Digite o código da aula");
                             String codigoAula = leitor.nextLine();

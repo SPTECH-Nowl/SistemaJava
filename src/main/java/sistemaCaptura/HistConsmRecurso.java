@@ -60,19 +60,16 @@ public class HistConsmRecurso {
                 Integer qtdJanelasAbertas = looca.getGrupoDeJanelas().getTotalJanelas();
                 dataHora = LocalDateTime.now();
                 List<Componente> componentes;
-                if (conexao.getDev()) {
-                    componentes = con.query("SELECT * FROM componente WHERE fkMaquina = ?",
-                            new BeanPropertyRowMapper<>(Componente.class), maquinaId);
-                } else {
+
                     componentes = con2.query("SELECT * FROM componente WHERE fkMaquina = ?",
                             new BeanPropertyRowMapper<>(Componente.class), maquinaId);
-                }
+
 
                 if (componentes.size() >= 3) {
                     String motivoComponentes = ":--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!";
                     logs.adicionarMotivo(motivoComponentes);
 
-                    hardwares = con.query("SELECT * FROM hardware ",
+                    hardwares = con2.query("SELECT * FROM hardware ",
                             new BeanPropertyRowMapper<>(Hardware.class));
 
                     double Ram = 0.0;

@@ -208,7 +208,7 @@ public class AppHistorico {
                             System.out.println("-".repeat(15));
                             for (Permissao permissao : permissaos) {
                                 System.out.println("Codigo aula: " + permissao.getNome());
-                            }1
+                            }
                             System.out.println("-".repeat(15));
                             System.out.println("Digite o código da aula");
                             String codigoAula = leitor.nextLine();

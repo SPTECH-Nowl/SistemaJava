@@ -10,11 +10,12 @@ import java.util.List;
 public class Adiministrador extends Usuario {
 
     static Conexao conexao = new Conexao();
-    List<Usuario>usuarios;
+    List<Usuario> usuarios;
 
     public Adiministrador(){
         usuarios=  new ArrayList<>();
     }
+
     public Adiministrador(Usuario usuario) {
         super(usuario.getIdUsuario(), usuario.getNome(), usuario.getEmail(), usuario.getSenha(), usuario.getFkInstituicao(), usuario.getFkTipoUsuario());
         usuarios=  new ArrayList<>();
@@ -29,20 +30,25 @@ public class Adiministrador extends Usuario {
     public void deletarUsuario(){}
 
     public void listar() {
-        System.out.println("lisar usuarios e maquinas da sua empresa");
+        System.out.println("Listar usuários e máquinas da sua empresa");
     }
+
     public void opcaoAdiministrador() {
-        JdbcTemplate con = conexao.getConexaoDoBanco();
+        JdbcTemplate con;
+        if (conexao.getDev()) {
+            con = conexao.getConexaoDoBancoMySQL();
+        } else {
+            con = conexao.getConexaoDoBancoSQLServer();
+        }
 
         usuarios = con.query("SELECT * FROM usuario WHERE fkInstituicao = ?",
-                new BeanPropertyRowMapper<>(Usuario.class),getFkInstituicao());
-        System.out.println("Lista de Usuarios da sua empresa");
+                new BeanPropertyRowMapper<>(Usuario.class), getFkInstituicao());
+        System.out.println("Lista de Usuários da sua empresa");
 
         for (Usuario usuario : usuarios){
             System.out.println("Nome: "+ usuario.getNome());
         }
     }
-
 
     @Override
     public String toString() {

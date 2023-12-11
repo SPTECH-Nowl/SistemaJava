@@ -4,31 +4,39 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Conexao {
 
-    private Boolean dev = false; // true = desenvolvimento(MYSQL) |--||--| false = produção(SQL)
+    private Boolean dev = true; // true = desenvolvimento(MYSQL) |--||--| false = produção(SQL)
     private JdbcTemplate conexaoDoBancoMySQL;
     private JdbcTemplate conexaoDoBancoSQLServer;
 
     public Conexao() {
-        if (dev) {
-            conexaoDoBancoMySQL = configurarConexaoMySQL();
-        } else {
-            conexaoDoBancoSQLServer = configurarConexaoSQLServer();
-        }
+//        if (!dev) {
+//        } else {
+//        }
+        conexaoDoBancoSQLServer = configurarConexaoSQLServer();
+        conexaoDoBancoMySQL = configurarConexaoMySQL();
     }
 
     private JdbcTemplate configurarConexaoMySQL() {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/magister");
-        dataSource.setUsername("aluno");
+        dataSource.setUsername("root");
         dataSource.setPassword("aluno");
         return new JdbcTemplate(dataSource);
     }
 
     private JdbcTemplate configurarConexaoSQLServer() {
         BasicDataSource dataSource = new BasicDataSource();
+
         dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        dataSource.setUrl("jdbc:sqlserver://52.3.127.92;database=magister;user=sa;password=Magister123@;trustServerCertificate=true;");
+        dataSource.setUrl("jdbc:sqlserver://52.3.127.92;" +
+                "database=magister;" +
+                "user=sa;" +
+                "password=Magister123@;" +
+                "trustServerCertificate=true;");
+        dataSource.setUsername("sa");
+        dataSource.setPassword("Magister123@");
+
         return new JdbcTemplate(dataSource);
     }
 

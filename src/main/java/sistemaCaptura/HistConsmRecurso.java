@@ -25,7 +25,7 @@ public class HistConsmRecurso {
 
     Conexao conexao = new Conexao();
     JdbcTemplate con = conexao.getConexaoDoBancoMySQL();
-    JdbcTemplate conSer = conexao.getConexaoDoBancoSQLServer();
+    JdbcTemplate con2 = conexao.getConexaoDoBancoSQLServer();
     Looca looca = new Looca();
     Timer timer = new Timer();
     Timer timer02 = new Timer();
@@ -64,7 +64,7 @@ public class HistConsmRecurso {
                     componentes = con.query("SELECT * FROM componente WHERE fkMaquina = ?",
                             new BeanPropertyRowMapper<>(Componente.class), maquinaId);
                 } else {
-                    componentes = conSer.query("SELECT * FROM componente WHERE fkMaquina = ?",
+                    componentes = con2.query("SELECT * FROM componente WHERE fkMaquina = ?",
                             new BeanPropertyRowMapper<>(Componente.class), maquinaId);
                 }
 
@@ -145,7 +145,7 @@ public class HistConsmRecurso {
 
         String sql = "INSERT INTO historico (dataHora, consumo,fkMaquina , fkHardware,fkComponente ) VALUES(?, ?, ?, ?, ?)";
         con.update(sql, dataHora, consumo, numeroMaquina, tipohardware, componente);
-        conSer.update(sql, dataHora, consumo, numeroMaquina, tipohardware, componente);
+        con2.update(sql, dataHora, consumo, numeroMaquina, tipohardware, componente);
     }
 
     private void mostrarDadosEmTabela(int consumoCpu, double consumoRam, double consumoDisco, int qtdJanelasAbertas, Hardware hardware1, Hardware hardware2) {
@@ -272,7 +272,7 @@ public class HistConsmRecurso {
     }
 
     private List<Maquina.Processo> obterProcessos(String nomeAula) {
-        return conSer.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo INNER JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
+        return con2.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo INNER JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
                 new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
     }
 
@@ -283,7 +283,7 @@ public class HistConsmRecurso {
 
     private void cadastrarStrike(Integer idMaquina, LocalDateTime dataHora) {
         con.update("INSERT INTO strike (dataHora, validade, motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
-        conSer.update("INSERT INTO strike (dataHora, validade, motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
+        con2.update("INSERT INTO strike (dataHora, validade, motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
     }
 
 

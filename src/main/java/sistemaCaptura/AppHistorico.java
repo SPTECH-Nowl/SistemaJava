@@ -23,7 +23,8 @@ public class AppHistorico {
     static Conexao conexao = new Conexao();
 
     public static void main(String[] args) {
-        JdbcTemplate con = conexao.getConexaoDoBanco();
+        JdbcTemplate con = conexao.getConexaoDoBancoMySQL();
+        JdbcTemplate conSer = conexao.getConexaoDoBancoSQLServer();
         HistConsmRecurso histConsmRecurso = new HistConsmRecurso();
 
         Scanner in = new Scanner(System.in);
@@ -42,7 +43,7 @@ public class AppHistorico {
 
             switch (escolha) {
                 case 1:
-                    fazerLogin(con, histConsmRecurso, in);
+                    fazerLogin(con,conSer, histConsmRecurso, in);
                     break;
                 case 2:
                     exibirMensagemDespedida();
@@ -55,7 +56,7 @@ public class AppHistorico {
         } while (escolha != 2);
     }
 
-    private static void cadastrarUsuario(JdbcTemplate con) {
+    private static void cadastrarUsuario(JdbcTemplate con,JdbcTemplate conSer) {
         Scanner leitor = new Scanner(System.in);
 
         System.out.println("Digite o nome do usuário (mínimo de 3 caracteres):");
@@ -92,17 +93,17 @@ public class AppHistorico {
         // Outros campos de cadastro, se necessário
 
         // Inserir o novo usuário no banco de dados com as colunas fkInstituicao e fkTipoUsuario
-        if (conexao.getDev()) {
+
             con.update("INSERT INTO usuario (nome, email, senha, fkInstituicao, fkTipoUsuario) VALUES (?, ?, ?, ?, ?)", nome, email, senha, fkInstituicao, fkTipoUsuario);
-        } else {
-            con.update("INSERT INTO usuario (nome, email, senha, fkInstituicao, fkTipoUsuario) VALUES (?, ?, ?, ?, ?)", nome, email, senha, fkInstituicao, fkTipoUsuario);
-        }
+
+            conSer.update("INSERT INTO usuario (nome, email, senha, fkInstituicao, fkTipoUsuario) VALUES (?, ?, ?, ?, ?)", nome, email, senha, fkInstituicao, fkTipoUsuario);
+
 
 
         System.out.println("Usuário cadastrado com sucesso!");
     }
 
-    private static void fazerLogin(JdbcTemplate con, HistConsmRecurso histConsmRecurso, Scanner in) {
+    private static void fazerLogin(JdbcTemplate con,JdbcTemplate conSer, HistConsmRecurso histConsmRecurso, Scanner in) {
         Scanner leitor = new Scanner(System.in);
         Integer numeroMaquina = null;
         Usuario usuario;
@@ -125,7 +126,7 @@ public class AppHistorico {
             usuarios = con.query("SELECT * FROM usuario WHERE email = ? AND senha = ?",
                     new BeanPropertyRowMapper<>(Usuario.class), email, senha);
         } else {
-            usuarios = con.query("SELECT * FROM usuario WHERE email = ? AND senha = ?",
+            usuarios = conSer.query("SELECT * FROM usuario WHERE email = ? AND senha = ?",
                     new BeanPropertyRowMapper<>(Usuario.class), email, senha);
         }
         if (usuarios.size() > 0) {
@@ -176,7 +177,7 @@ public class AppHistorico {
                             maquinas = con.query("SELECT * FROM maquina WHERE emUso = 0 AND fkInstituicao = ?",
                                     new BeanPropertyRowMapper<>(Maquina.class), usuario.getFkInstituicao());
                         } else {
-                            maquinas = con.query("SELECT * FROM maquina WHERE emUso = 0 AND fkInstituicao = ?",
+                            maquinas = conSer.query("SELECT * FROM maquina WHERE emUso = 0 AND fkInstituicao = ?",
                                     new BeanPropertyRowMapper<>(Maquina.class), usuario.getFkInstituicao());
                         }
                         if (maquinas.size() > 0) {
@@ -198,14 +199,14 @@ public class AppHistorico {
                             System.out.println("-".repeat(15));
                             System.out.println("Digite o número da máquina");
                             Integer numMaquina = in.nextInt();
-                            ativarMaquina(con, numMaquina, histConsmRecurso);
+                            ativarMaquina(con, conSer,numMaquina, histConsmRecurso);
                             numeroMaquina = numMaquina;
                             List<Permissao> permissaos;
                             if (conexao.getDev()) {
                                 permissaos = con.query("SELECT * FROM permissao WHERE emUso = 1 AND fkUsuario =?",
                                         new BeanPropertyRowMapper<>(Permissao.class),usuario.getIdUsuario());
                             } else {
-                                permissaos = con.query("SELECT * FROM permissao WHERE emUso = 1 AND fkUsuario =?",
+                                permissaos = conSer.query("SELECT * FROM permissao WHERE emUso = 1 AND fkUsuario =?",
                                         new BeanPropertyRowMapper<>(Permissao.class),usuario.getIdUsuario());
                             }
                             System.out.println("-".repeat(15));
@@ -236,7 +237,7 @@ public class AppHistorico {
                         }
                         break;
                     case 3:
-                        desativarMaquina(con, numeroMaquina);
+                        desativarMaquina(con, conSer,numeroMaquina);
                         exibirMensagemDespedida();
                         histConsmRecurso.fecharSistema();// Isso encerrará o programa
                         return;
@@ -252,31 +253,31 @@ public class AppHistorico {
         }
     }
 
-    private static void ativarMaquina(JdbcTemplate con, Integer maquinaId, HistConsmRecurso histConsmRecurso) {
+    private static void ativarMaquina(JdbcTemplate con,JdbcTemplate conSer,  Integer maquinaId, HistConsmRecurso histConsmRecurso) {
         Maquina maquina = con.queryForObject("SELECT * FROM maquina WHERE idMaquina = ? AND emUso = 0",
                 new BeanPropertyRowMapper<>(Maquina.class), maquinaId);
 
         if (maquina != null) {
-            if (conexao.getDev()) {
+
 
                 con.update("UPDATE maquina SET emUso = 1 WHERE idMaquina = ?", maquinaId);
                 System.out.println("Máquina ativada com sucesso: " + maquina.getNome());
-            } else {
-                con.update("UPDATE maquina SET emUso = 1 WHERE idMaquina = ?", maquinaId);
+
+                conSer.update("UPDATE maquina SET emUso = 1 WHERE idMaquina = ?", maquinaId);
                 System.out.println("Máquina ativada com sucesso: " + maquina.getNome());
-            }
+
         } else {
             System.out.println("Máquina não disponível ou inválida.");
         }
     }
 
-    private static void desativarMaquina(JdbcTemplate con, Integer maquinaId) {
-        if (conexao.getDev()) {
-            con.update("UPDATE maquina SET emUso = 0 WHERE idMaquina = ?", maquinaId);
-        } else {
+    private static void desativarMaquina(JdbcTemplate con, JdbcTemplate conSer,Integer maquinaId) {
+
             con.update("UPDATE maquina SET emUso = 0 WHERE idMaquina = ?", maquinaId);
 
-        }
+            conSer.update("UPDATE maquina SET emUso = 0 WHERE idMaquina = ?", maquinaId);
+
+
     }
 
     private static void exibirMensagemDespedida() {
@@ -324,9 +325,9 @@ public class AppHistorico {
         // Recuperar o ID da máquina recém-cadastrada
 
         // Cadastrar hardware e componente para a máquina
-        cadastrarHardwareEComponente(con, idMaquina,1);
         cadastrarHardwareEComponente(con, idMaquina,2);
         cadastrarHardwareEComponente(con, idMaquina,3);
+        cadastrarHardwareEComponente(con, idMaquina,1);
 
         System.out.println("Máquina cadastrada com sucesso!");
     }
@@ -358,35 +359,36 @@ public class AppHistorico {
         Scanner leitor = new Scanner(System.in);
 
         // Cadastrar hardware
-        if(tipo == 1){
+        if(tipo == 2){
             System.out.println("Digite o fabricante do hardware(CPU):");
-        } else if (tipo ==2) {
-            System.out.println("Digite o fabricante do hardware(RAM):");
         } else if (tipo ==3) {
+            System.out.println("Digite o fabricante do hardware(RAM):");
+        } else if (tipo ==1) {
+
             System.out.println("Digite o fabricante do hardware(Disco):");
         }
         String fabricante = leitor.nextLine();
-        if(tipo == 1){
+        if(tipo == 2){
             System.out.println("Digite o modelo do hardware(CPU):");
-        } else if (tipo ==2) {
-            System.out.println("Digite o modelo do hardware(RAM):");
         } else if (tipo ==3) {
+            System.out.println("Digite o modelo do hardware(RAM):");
+        } else if (tipo ==1) {
             System.out.println("Digite o modelo do hardware(Disco):");
         }
         String modelo = leitor.nextLine();
-        if(tipo == 1){
+        if(tipo == 2){
             System.out.println("Digite a capacidade do hardware(CPU):");
-        } else if (tipo ==2) {
-            System.out.println("Digite a capacidade do hardware(RAM):");
         } else if (tipo ==3) {
+            System.out.println("Digite a capacidade do hardware(RAM):");
+        } else if (tipo ==1) {
             System.out.println("Digite a capacidade do hardware(Disco):");
         }
         double capacidade = leitor.nextDouble();
-        if(tipo == 1){
+        if(tipo == 2){
             System.out.println("Digite a especificidade do hardware(CPU):");
-        } else if (tipo ==2) {
-            System.out.println("Digite a especificidade do hardware(RAM):");
         } else if (tipo ==3) {
+            System.out.println("Digite a especificidade do hardware(RAM):");
+        } else if (tipo ==1) {
             System.out.println("Digite a especificidade do hardware(Disco):");
         }
         String especificidade = leitor.nextLine();

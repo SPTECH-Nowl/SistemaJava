@@ -24,13 +24,14 @@ public class HistConsmRecurso {
     private LocalDateTime dataHora = LocalDateTime.now();
 
     Conexao conexao = new Conexao();
-    JdbcTemplate con = conexao.getConexaoDoBanco();
+    JdbcTemplate con = conexao.getConexaoDoBancoMySQL();
+    JdbcTemplate conSer = conexao.getConexaoDoBancoSQLServer();
     Looca looca = new Looca();
     Timer timer = new Timer();
     Timer timer02 = new Timer();
     List<Hardware> hardwares;
 
-    BotSlack botSlack = new BotSlack("xoxb-6077098544578-6249289926579-6x7cPWRKwGA860AQbKZ4vpiq", "C062962NFKM");
+    BotSlack botSlack = new BotSlack("xoxb-6077098544578-6249289926579-RibvLIN6DoAhk8q2nFVrsvVz", "C062962NFKM");
     Logs logs = new Logs();
     Integer qtdStrike = 0;
 
@@ -58,10 +59,15 @@ public class HistConsmRecurso {
                 double consumoDisco = looca.getGrupoDeDiscos().getTamanhoTotal().doubleValue();
                 Integer qtdJanelasAbertas = looca.getGrupoDeJanelas().getTotalJanelas();
                 dataHora = LocalDateTime.now();
+                List<Componente> componentes;
+                if (conexao.getDev()) {
+                    componentes = con.query("SELECT * FROM componente WHERE fkMaquina = ?",
+                            new BeanPropertyRowMapper<>(Componente.class), maquinaId);
+                } else {
+                    componentes = conSer.query("SELECT * FROM componente WHERE fkMaquina = ?",
+                            new BeanPropertyRowMapper<>(Componente.class), maquinaId);
+                }
 
-
-                List<Componente> componentes = con.query("SELECT * FROM componente WHERE fkMaquina = ?",
-                        new BeanPropertyRowMapper<>(Componente.class), maquinaId);
                 if (componentes.size() >= 3) {
                     String motivoComponentes = ":--SUCCESS: O sistema localizou os 3 componentes para ser monitorados)!";
                     logs.adicionarMotivo(motivoComponentes);
@@ -139,6 +145,7 @@ public class HistConsmRecurso {
 
         String sql = "INSERT INTO historico (dataHora, consumo,fkMaquina , fkHardware,fkComponente ) VALUES(?, ?, ?, ?, ?)";
         con.update(sql, dataHora, consumo, numeroMaquina, tipohardware, componente);
+        conSer.update(sql, dataHora, consumo, numeroMaquina, tipohardware, componente);
     }
 
     private void mostrarDadosEmTabela(int consumoCpu, double consumoRam, double consumoDisco, int qtdJanelasAbertas, Hardware hardware1, Hardware hardware2) {
@@ -265,7 +272,7 @@ public class HistConsmRecurso {
     }
 
     private List<Maquina.Processo> obterProcessos(String nomeAula) {
-        return con.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo INNER JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
+        return conSer.query("SELECT idProcesso, nomeProcesso, nomeAplicativo FROM processo INNER JOIN permissaoProcesso ON idprocesso = fkProcesso WHERE fkPermissao=(SELECT idPermissao FROM permissao WHERE nome = ?)",
                 new BeanPropertyRowMapper<>(Maquina.Processo.class), nomeAula);
     }
 
@@ -276,6 +283,7 @@ public class HistConsmRecurso {
 
     private void cadastrarStrike(Integer idMaquina, LocalDateTime dataHora) {
         con.update("INSERT INTO strike (dataHora, validade, motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
+        conSer.update("INSERT INTO strike (dataHora, validade, motivo, duracao, fkMaquina, fkSituacao) VALUES (?, ?, ?, ?, ?, ?);", dataHora, 1, "Uso indevido", 30, idMaquina, 1);
     }
 
 

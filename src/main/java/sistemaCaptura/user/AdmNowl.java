@@ -25,25 +25,29 @@ public class AdmNowl extends Usuario {
     }
 
     public void opcaoAdmNowl() {
-        JdbcTemplate con = conexao.getConexaoDoBanco();
+        JdbcTemplate con;
+        if (conexao.getDev()) {
+            con = conexao.getConexaoDoBancoMySQL();
+        } else {
+            con = conexao.getConexaoDoBancoSQLServer();
+        }
 
         usuarios = con.query("SELECT * FROM usuario",
                 new BeanPropertyRowMapper<>(Usuario.class));
-        System.out.println("Lista de Usuarios do sistema");
+        System.out.println("Lista de Usuários do sistema");
 
         for (Usuario usuario : usuarios) {
             if (usuario.getFkTipoUsuario() == 1) {
                 System.out.println("|Nome: " + usuario.getNome() + "| ADM Nowl|");
             } else if (usuario.getFkTipoUsuario() == 2) {
-                    System.out.println("|Nome: " + usuario.getNome() + "| ADM da Intituição|");
-                } else if (usuario.getFkTipoUsuario() == 3) {
-                    System.out.println("|Nome: " + usuario.getNome() + "| Professor|");
-                } else {
-                    System.out.println("|Nome: " + usuario.getNome() + "| Usuario padão|");
-                }
+                System.out.println("|Nome: " + usuario.getNome() + "| ADM da Instituição|");
+            } else if (usuario.getFkTipoUsuario() == 3) {
+                System.out.println("|Nome: " + usuario.getNome() + "| Professor|");
+            } else {
+                System.out.println("|Nome: " + usuario.getNome() + "| Usuário padrão|");
             }
         }
-
+    }
 
     public void listar() {
         System.out.println("Listar TUDO");
